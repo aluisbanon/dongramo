@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Vulnerabilidad o fuga de datos
+    url: https://github.com/rayotropic/don-gramo/security/advisories/new
+    about: Avísalo en privado, no en un issue público.

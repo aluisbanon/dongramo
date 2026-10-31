@@ -1,0 +1,7 @@
+# Mantiene al día las acciones de GitHub de la CI (un PR al mes como mucho).
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

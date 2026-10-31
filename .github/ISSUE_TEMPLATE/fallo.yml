@@ -1,0 +1,38 @@
+name: Algo no funciona
+description: Un fallo, una cuenta que no cuadra o un error
+labels: [fallo]
+body:
+  - type: markdown
+    attributes:
+      value: "⚠️ **No pegues datos reales** (pesos, registro, config.json, tokens). Si hace falta, invéntalos."
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué ha pasado
+      description: Qué pediste, qué esperabas y qué salió.
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Cómo reproducirlo
+      placeholder: "1. persona-alta ...\n2. hoy --fecha jueves\n3. ..."
+  - type: dropdown
+    id: donde
+    attributes:
+      label: Dónde lo usas
+      multiple: true
+      options: [Claude Code, Codex, OpenClaw, Bot de Telegram, Extensión de Cookidoo, Otro]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión
+      description: "La de `claude plugin list` o la de plugin.json"
+      placeholder: "1.0.0"
+  - type: input
+    id: sistema
+    attributes:
+      label: Sistema y Python
+      placeholder: "macOS 15 · Python 3.12"

@@ -1,0 +1,4660 @@
+{
+ "version": "1.0.0",
+ "horas": {
+  "Desayuno": "08:00",
+  "Media mañana": "11:00",
+  "Comida": "14:00",
+  "Merienda": "18:00",
+  "Cena": "21:00"
+ },
+ "foods": {
+  "pan integral": {
+   "kcal": 250,
+   "p": 10.0,
+   "h": 42.0,
+   "g": 3.5,
+   "cat": "Panadería y cereales",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "arroz basmati (seco)": {
+   "kcal": 355,
+   "p": 8.0,
+   "h": 78.0,
+   "g": 0.8,
+   "cat": "Panadería y cereales",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "arroz integral (seco)": {
+   "kcal": 360,
+   "p": 7.5,
+   "h": 75.0,
+   "g": 2.7,
+   "cat": "Panadería y cereales",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "maicena": {
+   "kcal": 380,
+   "p": 0.3,
+   "h": 91.0,
+   "g": 0.1,
+   "cat": "Panadería y cereales",
+   "ud": null,
+   "flex": true,
+   "paso": 1
+  },
+  "harina de trigo": {
+   "kcal": 350,
+   "p": 10.0,
+   "h": 73.0,
+   "g": 1.0,
+   "cat": "Panadería y cereales",
+   "ud": null,
+   "flex": true,
+   "paso": 1
+  },
+  "lentejas pardinas (secas)": {
+   "kcal": 335,
+   "p": 24.0,
+   "h": 50.0,
+   "g": 1.5,
+   "cat": "Legumbres y conservas",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "garbanzos cocidos (bote, escurridos)": {
+   "kcal": 125,
+   "p": 7.5,
+   "h": 17.0,
+   "g": 2.4,
+   "cat": "Legumbres y conservas",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "atún al natural (escurrido)": {
+   "kcal": 105,
+   "p": 24.0,
+   "h": 0.0,
+   "g": 0.8,
+   "cat": "Legumbres y conservas",
+   "ud": 52,
+   "flex": false,
+   "paso": 5
+  },
+  "tomate triturado": {
+   "kcal": 25,
+   "p": 1.3,
+   "h": 4.0,
+   "g": 0.2,
+   "cat": "Legumbres y conservas",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "pimientos asados (conserva)": {
+   "kcal": 30,
+   "p": 1.0,
+   "h": 5.5,
+   "g": 0.3,
+   "cat": "Legumbres y conservas",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "pechuga de pollo": {
+   "kcal": 120,
+   "p": 22.5,
+   "h": 0.0,
+   "g": 2.6,
+   "cat": "Carne",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "pechuga de pavo": {
+   "kcal": 105,
+   "p": 23.5,
+   "h": 0.0,
+   "g": 1.0,
+   "cat": "Carne",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "pavo picado": {
+   "kcal": 130,
+   "p": 20.0,
+   "h": 0.0,
+   "g": 5.0,
+   "cat": "Carne",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "ternera magra para guisar": {
+   "kcal": 130,
+   "p": 21.0,
+   "h": 0.0,
+   "g": 5.0,
+   "cat": "Carne",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "fiambre de pavo (+90% carne)": {
+   "kcal": 105,
+   "p": 21.0,
+   "h": 1.5,
+   "g": 1.5,
+   "cat": "Charcutería",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "jamón serrano": {
+   "kcal": 240,
+   "p": 31.0,
+   "h": 0.0,
+   "g": 13.0,
+   "cat": "Charcutería",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "merluza (lomos)": {
+   "kcal": 75,
+   "p": 17.0,
+   "h": 0.0,
+   "g": 0.8,
+   "cat": "Pescado",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "salmón (lomo)": {
+   "kcal": 200,
+   "p": 20.0,
+   "h": 0.0,
+   "g": 13.0,
+   "cat": "Pescado",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "sepia limpia": {
+   "kcal": 75,
+   "p": 16.0,
+   "h": 0.8,
+   "g": 0.9,
+   "cat": "Pescado",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "gambas peladas": {
+   "kcal": 80,
+   "p": 18.0,
+   "h": 0.0,
+   "g": 0.8,
+   "cat": "Pescado",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "huevo": {
+   "kcal": 145,
+   "p": 12.5,
+   "h": 0.7,
+   "g": 10.0,
+   "cat": "Huevos y lácteos",
+   "ud": 55,
+   "flex": false,
+   "paso": 5
+  },
+  "claras de huevo": {
+   "kcal": 50,
+   "p": 11.0,
+   "h": 0.7,
+   "g": 0.2,
+   "cat": "Huevos y lácteos",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "leche desnatada": {
+   "kcal": 35,
+   "p": 3.4,
+   "h": 5.0,
+   "g": 0.1,
+   "cat": "Huevos y lácteos",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "skyr natural": {
+   "kcal": 63,
+   "p": 11.0,
+   "h": 4.0,
+   "g": 0.2,
+   "cat": "Huevos y lácteos",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "yogur natural desnatado": {
+   "kcal": 40,
+   "p": 4.3,
+   "h": 5.5,
+   "g": 0.1,
+   "cat": "Huevos y lácteos",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "queso fresco batido 0%": {
+   "kcal": 46,
+   "p": 8.0,
+   "h": 3.5,
+   "g": 0.2,
+   "cat": "Huevos y lácteos",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "queso fresco Burgos 0%": {
+   "kcal": 70,
+   "p": 12.0,
+   "h": 4.0,
+   "g": 0.5,
+   "cat": "Huevos y lácteos",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "mozzarella light": {
+   "kcal": 170,
+   "p": 20.0,
+   "h": 2.0,
+   "g": 9.0,
+   "cat": "Huevos y lácteos",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "tomate": {
+   "kcal": 20,
+   "p": 0.9,
+   "h": 3.5,
+   "g": 0.2,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "calabacín": {
+   "kcal": 17,
+   "p": 1.2,
+   "h": 3.0,
+   "g": 0.3,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "calabaza": {
+   "kcal": 26,
+   "p": 1.0,
+   "h": 6.0,
+   "g": 0.1,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "zanahoria": {
+   "kcal": 41,
+   "p": 0.9,
+   "h": 9.6,
+   "g": 0.2,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "cebolla": {
+   "kcal": 40,
+   "p": 1.1,
+   "h": 9.0,
+   "g": 0.1,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "puerro": {
+   "kcal": 31,
+   "p": 1.5,
+   "h": 6.0,
+   "g": 0.3,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "pimiento rojo": {
+   "kcal": 31,
+   "p": 1.0,
+   "h": 6.0,
+   "g": 0.3,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "pimiento verde": {
+   "kcal": 20,
+   "p": 0.9,
+   "h": 4.0,
+   "g": 0.2,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "judías verdes": {
+   "kcal": 31,
+   "p": 1.8,
+   "h": 7.0,
+   "g": 0.1,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "brócoli": {
+   "kcal": 34,
+   "p": 2.8,
+   "h": 7.0,
+   "g": 0.4,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "espinacas": {
+   "kcal": 23,
+   "p": 2.9,
+   "h": 3.6,
+   "g": 0.4,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "champiñones": {
+   "kcal": 22,
+   "p": 3.1,
+   "h": 3.3,
+   "g": 0.3,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "berenjena": {
+   "kcal": 25,
+   "p": 1.0,
+   "h": 6.0,
+   "g": 0.2,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "lechuga / mezcla de hojas": {
+   "kcal": 17,
+   "p": 1.4,
+   "h": 3.0,
+   "g": 0.2,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "patata": {
+   "kcal": 80,
+   "p": 2.0,
+   "h": 17.0,
+   "g": 0.1,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "manzana": {
+   "kcal": 52,
+   "p": 0.3,
+   "h": 12.0,
+   "g": 0.2,
+   "cat": "Fruta y verdura",
+   "ud": 180,
+   "flex": true,
+   "paso": 5
+  },
+  "plátano": {
+   "kcal": 90,
+   "p": 1.1,
+   "h": 20.0,
+   "g": 0.3,
+   "cat": "Fruta y verdura",
+   "ud": 120,
+   "flex": true,
+   "paso": 5
+  },
+  "mandarina": {
+   "kcal": 45,
+   "p": 0.8,
+   "h": 10.0,
+   "g": 0.2,
+   "cat": "Fruta y verdura",
+   "ud": 80,
+   "flex": true,
+   "paso": 5
+  },
+  "kiwi": {
+   "kcal": 61,
+   "p": 1.1,
+   "h": 13.0,
+   "g": 0.5,
+   "cat": "Fruta y verdura",
+   "ud": 80,
+   "flex": true,
+   "paso": 5
+  },
+  "pera": {
+   "kcal": 57,
+   "p": 0.4,
+   "h": 13.0,
+   "g": 0.1,
+   "cat": "Fruta y verdura",
+   "ud": 170,
+   "flex": true,
+   "paso": 5
+  },
+  "arándanos": {
+   "kcal": 57,
+   "p": 0.7,
+   "h": 12.0,
+   "g": 0.3,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "aguacate": {
+   "kcal": 160,
+   "p": 2.0,
+   "h": 2.0,
+   "g": 15.0,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "aceite de oliva virgen extra": {
+   "kcal": 900,
+   "p": 0.0,
+   "h": 0.0,
+   "g": 100.0,
+   "cat": "Despensa",
+   "ud": null,
+   "flex": true,
+   "paso": 1
+  },
+  "almendras naturales": {
+   "kcal": 600,
+   "p": 21.0,
+   "h": 6.0,
+   "g": 52.0,
+   "cat": "Despensa",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "nueces": {
+   "kcal": 680,
+   "p": 15.0,
+   "h": 4.0,
+   "g": 65.0,
+   "cat": "Despensa",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "cacao puro desgrasado": {
+   "kcal": 360,
+   "p": 25.0,
+   "h": 15.0,
+   "g": 11.0,
+   "cat": "Despensa",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "alubias blancas cocidas (bote, escurridas)": {
+   "kcal": 105,
+   "p": 7.0,
+   "h": 15.0,
+   "g": 0.5,
+   "cat": "Legumbres y conservas",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "bacalao desalado": {
+   "kcal": 75,
+   "p": 17.0,
+   "h": 0.0,
+   "g": 0.5,
+   "cat": "Pescado",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "lubina": {
+   "kcal": 110,
+   "p": 19.0,
+   "h": 0.0,
+   "g": 3.5,
+   "cat": "Pescado",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "dorada": {
+   "kcal": 110,
+   "p": 19.0,
+   "h": 0.0,
+   "g": 3.5,
+   "cat": "Pescado",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "pasta integral (seca)": {
+   "kcal": 350,
+   "p": 13.0,
+   "h": 64.0,
+   "g": 2.5,
+   "cat": "Panadería y cereales",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "copos de avena": {
+   "kcal": 370,
+   "p": 13.0,
+   "h": 58.0,
+   "g": 7.0,
+   "cat": "Panadería y cereales",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "cuscús integral (seco)": {
+   "kcal": 360,
+   "p": 12.0,
+   "h": 72.0,
+   "g": 2.0,
+   "cat": "Panadería y cereales",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "arroz redondo (seco)": {
+   "kcal": 350,
+   "p": 7.0,
+   "h": 78.0,
+   "g": 0.6,
+   "cat": "Panadería y cereales",
+   "ud": null,
+   "flex": true,
+   "paso": 5
+  },
+  "carne picada de ternera magra": {
+   "kcal": 135,
+   "p": 21.0,
+   "h": 0.0,
+   "g": 5.5,
+   "cat": "Carne",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "espárragos verdes": {
+   "kcal": 20,
+   "p": 2.2,
+   "h": 2.0,
+   "g": 0.1,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "guisantes congelados": {
+   "kcal": 80,
+   "p": 5.4,
+   "h": 10.0,
+   "g": 0.4,
+   "cat": "Fruta y verdura",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "proteína whey": {
+   "kcal": 362,
+   "p": 74.0,
+   "h": 6.5,
+   "g": 3.8,
+   "cat": "Suplementos",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "leche entera": {
+   "kcal": 63,
+   "p": 3.2,
+   "h": 4.7,
+   "g": 3.6,
+   "cat": "Huevos y lácteos",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  },
+  "leche semidesnatada": {
+   "kcal": 46,
+   "p": 3.2,
+   "h": 4.8,
+   "g": 1.6,
+   "cat": "Huevos y lácteos",
+   "ud": null,
+   "flex": false,
+   "paso": 5
+  }
+ },
+ "menus": {
+  "A": {
+   "nombre": "Menú A",
+   "dias": [
+    {
+     "dia": "Lunes",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con pavo y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Skyr con nueces",
+       "receta": null,
+       "items": [
+        {
+         "f": "skyr natural",
+         "g": 150
+        },
+        {
+         "f": "nueces",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Lentejas estofadas con verduras y pavo",
+       "receta": "lentejas",
+       "items": [
+        {
+         "f": "lentejas pardinas (secas)",
+         "g": 110
+        },
+        {
+         "f": "pechuga de pavo",
+         "g": 80
+        },
+        {
+         "f": "zanahoria",
+         "g": 60
+        },
+        {
+         "f": "pimiento rojo",
+         "g": 40
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "patata",
+         "g": 80
+        },
+        {
+         "f": "tomate triturado",
+         "g": 40
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Huevos cocidos con pimientos asados y pan",
+       "receta": null,
+       "items": [
+        {
+         "f": "huevo",
+         "g": 110
+        },
+        {
+         "f": "pimientos asados (conserva)",
+         "g": 80
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Crema de calabacín y pechuga de pollo a la plancha",
+       "receta": "crema_calabacin",
+       "items": [
+        {
+         "f": "calabacín",
+         "g": 300
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "patata",
+         "g": 60
+        },
+        {
+         "f": "queso fresco batido 0%",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        },
+        {
+         "f": "pechuga de pollo",
+         "g": 150
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Martes",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con aguacate y pavo + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "aguacate",
+         "g": 40
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 50
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Almendras y mandarinas",
+       "receta": null,
+       "items": [
+        {
+         "f": "almendras naturales",
+         "g": 25
+        },
+        {
+         "f": "mandarina",
+         "g": 160
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Pollo al curry suave con arroz basmati",
+       "receta": "pollo_curry",
+       "items": [
+        {
+         "f": "pechuga de pollo",
+         "g": 170
+        },
+        {
+         "f": "arroz basmati (seco)",
+         "g": 90
+        },
+        {
+         "f": "cebolla",
+         "g": 60
+        },
+        {
+         "f": "pimiento rojo",
+         "g": 50
+        },
+        {
+         "f": "yogur natural desnatado",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Natillas proteicas de chocolate y fruta",
+       "receta": "natillas",
+       "items": [
+        {
+         "f": "leche desnatada",
+         "g": 125
+        },
+        {
+         "f": "maicena",
+         "g": 8
+        },
+        {
+         "f": "cacao puro desgrasado",
+         "g": 4
+        },
+        {
+         "f": "huevo",
+         "g": 14
+        },
+        {
+         "f": "proteína whey",
+         "g": 15
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Tortilla de champiñones con ensalada de tomate",
+       "receta": null,
+       "items": [
+        {
+         "f": "huevo",
+         "g": 110
+        },
+        {
+         "f": "claras de huevo",
+         "g": 100
+        },
+        {
+         "f": "champiñones",
+         "g": 120
+        },
+        {
+         "f": "tomate",
+         "g": 150
+        },
+        {
+         "f": "lechuga / mezcla de hojas",
+         "g": 50
+        },
+        {
+         "f": "pan integral",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Miércoles",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con queso fresco y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "queso fresco Burgos 0%",
+         "g": 80
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Yogur con arándanos y nueces",
+       "receta": null,
+       "items": [
+        {
+         "f": "yogur natural desnatado",
+         "g": 125
+        },
+        {
+         "f": "arándanos",
+         "g": 100
+        },
+        {
+         "f": "nueces",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Merluza en salsa verde con patata y judías al Varoma",
+       "receta": "merluza_varoma",
+       "items": [
+        {
+         "f": "merluza (lomos)",
+         "g": 220
+        },
+        {
+         "f": "patata",
+         "g": 250
+        },
+        {
+         "f": "judías verdes",
+         "g": 150
+        },
+        {
+         "f": "harina de trigo",
+         "g": 4
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 12
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Tostada integral con tomate y pavo y una mandarina",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 50
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 50
+        },
+        {
+         "f": "mandarina",
+         "g": 160
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Crema de calabaza y gambas a la plancha",
+       "receta": "crema_calabaza",
+       "items": [
+        {
+         "f": "calabaza",
+         "g": 300
+        },
+        {
+         "f": "zanahoria",
+         "g": 50
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "patata",
+         "g": 60
+        },
+        {
+         "f": "queso fresco batido 0%",
+         "g": 60
+        },
+        {
+         "f": "gambas peladas",
+         "g": 160
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Jueves",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con pavo y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Manzana y nueces",
+       "receta": null,
+       "items": [
+        {
+         "f": "manzana",
+         "g": 180
+        },
+        {
+         "f": "nueces",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Garbanzos con espinacas y huevo",
+       "receta": "garbanzos",
+       "items": [
+        {
+         "f": "garbanzos cocidos (bote, escurridos)",
+         "g": 280
+        },
+        {
+         "f": "espinacas",
+         "g": 150
+        },
+        {
+         "f": "huevo",
+         "g": 110
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "tomate triturado",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Queso batido con kiwi",
+       "receta": null,
+       "items": [
+        {
+         "f": "queso fresco batido 0%",
+         "g": 200
+        },
+        {
+         "f": "kiwi",
+         "g": 160
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Sepia a la plancha con ensalada y pan",
+       "receta": null,
+       "items": [
+        {
+         "f": "sepia limpia",
+         "g": 250
+        },
+        {
+         "f": "lechuga / mezcla de hojas",
+         "g": 80
+        },
+        {
+         "f": "tomate",
+         "g": 120
+        },
+        {
+         "f": "pan integral",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Viernes",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con aguacate y pavo + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "aguacate",
+         "g": 40
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 50
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Pera y almendras",
+       "receta": null,
+       "items": [
+        {
+         "f": "pera",
+         "g": 170
+        },
+        {
+         "f": "almendras naturales",
+         "g": 15
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Salmón al Varoma con brócoli y patata",
+       "receta": "salmon_varoma",
+       "items": [
+        {
+         "f": "salmón (lomo)",
+         "g": 160
+        },
+        {
+         "f": "brócoli",
+         "g": 200
+        },
+        {
+         "f": "patata",
+         "g": 250
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Natillas proteicas de chocolate y fruta",
+       "receta": "natillas",
+       "items": [
+        {
+         "f": "leche desnatada",
+         "g": 125
+        },
+        {
+         "f": "maicena",
+         "g": 8
+        },
+        {
+         "f": "cacao puro desgrasado",
+         "g": 4
+        },
+        {
+         "f": "huevo",
+         "g": 14
+        },
+        {
+         "f": "proteína whey",
+         "g": 15
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Tortilla de atún con tomate aliñado",
+       "receta": null,
+       "items": [
+        {
+         "f": "huevo",
+         "g": 110
+        },
+        {
+         "f": "claras de huevo",
+         "g": 100
+        },
+        {
+         "f": "atún al natural (escurrido)",
+         "g": 104
+        },
+        {
+         "f": "tomate",
+         "g": 200
+        },
+        {
+         "f": "pan integral",
+         "g": 50
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Sábado",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con queso fresco y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "queso fresco Burgos 0%",
+         "g": 80
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Yogur natural con almendras",
+       "receta": null,
+       "items": [
+        {
+         "f": "yogur natural desnatado",
+         "g": 125
+        },
+        {
+         "f": "almendras naturales",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Albóndigas de pavo en salsa de tomate con arroz integral",
+       "receta": "albondigas",
+       "items": [
+        {
+         "f": "pavo picado",
+         "g": 180
+        },
+        {
+         "f": "claras de huevo",
+         "g": 30
+        },
+        {
+         "f": "arroz integral (seco)",
+         "g": 100
+        },
+        {
+         "f": "tomate triturado",
+         "g": 150
+        },
+        {
+         "f": "cebolla",
+         "g": 50
+        },
+        {
+         "f": "zanahoria",
+         "g": 40
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Skyr con plátano",
+       "receta": null,
+       "items": [
+        {
+         "f": "skyr natural",
+         "g": 150
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Pizza de base de berenjena con pavo y mozzarella light",
+       "receta": "pizza_berenjena",
+       "items": [
+        {
+         "f": "berenjena",
+         "g": 300
+        },
+        {
+         "f": "tomate triturado",
+         "g": 60
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 80
+        },
+        {
+         "f": "mozzarella light",
+         "g": 60
+        },
+        {
+         "f": "champiñones",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        },
+        {
+         "f": "pan integral",
+         "g": 50
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Domingo",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con pavo y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Dos lonchas de jamón serrano y mandarinas",
+       "receta": null,
+       "items": [
+        {
+         "f": "jamón serrano",
+         "g": 30
+        },
+        {
+         "f": "mandarina",
+         "g": 160
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Ternera guisada con verduras y patata",
+       "receta": "ternera",
+       "items": [
+        {
+         "f": "ternera magra para guisar",
+         "g": 170
+        },
+        {
+         "f": "patata",
+         "g": 250
+        },
+        {
+         "f": "zanahoria",
+         "g": 70
+        },
+        {
+         "f": "pimiento verde",
+         "g": 40
+        },
+        {
+         "f": "cebolla",
+         "g": 50
+        },
+        {
+         "f": "tomate triturado",
+         "g": 50
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Skyr con arándanos y nueces",
+       "receta": null,
+       "items": [
+        {
+         "f": "skyr natural",
+         "g": 150
+        },
+        {
+         "f": "arándanos",
+         "g": 100
+        },
+        {
+         "f": "nueces",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Crema de puerro y calabacín con revuelto de huevo",
+       "receta": "crema_puerro",
+       "items": [
+        {
+         "f": "puerro",
+         "g": 150
+        },
+        {
+         "f": "calabacín",
+         "g": 200
+        },
+        {
+         "f": "patata",
+         "g": 80
+        },
+        {
+         "f": "queso fresco batido 0%",
+         "g": 50
+        },
+        {
+         "f": "huevo",
+         "g": 110
+        },
+        {
+         "f": "claras de huevo",
+         "g": 100
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "B": {
+   "nombre": "Menú B",
+   "dias": [
+    {
+     "dia": "Lunes",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Porridge de avena con leche y plátano",
+       "receta": "porridge",
+       "items": [
+        {
+         "f": "copos de avena",
+         "g": 60
+        },
+        {
+         "f": "leche desnatada",
+         "g": 250
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Manzana y nueces",
+       "receta": null,
+       "items": [
+        {
+         "f": "manzana",
+         "g": 180
+        },
+        {
+         "f": "nueces",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Arroz caldoso de pollo y verduras",
+       "receta": "arroz_caldoso",
+       "items": [
+        {
+         "f": "pechuga de pollo",
+         "g": 180
+        },
+        {
+         "f": "arroz redondo (seco)",
+         "g": 85
+        },
+        {
+         "f": "judías verdes",
+         "g": 80
+        },
+        {
+         "f": "pimiento rojo",
+         "g": 50
+        },
+        {
+         "f": "tomate triturado",
+         "g": 60
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Skyr con kiwi",
+       "receta": null,
+       "items": [
+        {
+         "f": "skyr natural",
+         "g": 150
+        },
+        {
+         "f": "kiwi",
+         "g": 160
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Crema de zanahoria y pavo a la plancha",
+       "receta": "crema_zanahoria",
+       "items": [
+        {
+         "f": "zanahoria",
+         "g": 250
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "patata",
+         "g": 60
+        },
+        {
+         "f": "queso fresco batido 0%",
+         "g": 50
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 6
+        },
+        {
+         "f": "pechuga de pavo",
+         "g": 150
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Martes",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con pavo y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Yogur natural con almendras",
+       "receta": null,
+       "items": [
+        {
+         "f": "yogur natural desnatado",
+         "g": 125
+        },
+        {
+         "f": "almendras naturales",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Pavo en salsa de champiñones con patata",
+       "receta": "pavo_champis",
+       "items": [
+        {
+         "f": "pechuga de pavo",
+         "g": 180
+        },
+        {
+         "f": "champiñones",
+         "g": 150
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "leche desnatada",
+         "g": 80
+        },
+        {
+         "f": "maicena",
+         "g": 5
+        },
+        {
+         "f": "patata",
+         "g": 230
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Tostada integral con pavo",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 60
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 50
+        },
+        {
+         "f": "tomate",
+         "g": 50
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Tortilla de calabacín con ensalada",
+       "receta": null,
+       "items": [
+        {
+         "f": "huevo",
+         "g": 110
+        },
+        {
+         "f": "claras de huevo",
+         "g": 100
+        },
+        {
+         "f": "calabacín",
+         "g": 200
+        },
+        {
+         "f": "cebolla",
+         "g": 30
+        },
+        {
+         "f": "lechuga / mezcla de hojas",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 100
+        },
+        {
+         "f": "pan integral",
+         "g": 50
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Miércoles",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con queso fresco y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "queso fresco Burgos 0%",
+         "g": 80
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Plátano y almendras",
+       "receta": null,
+       "items": [
+        {
+         "f": "plátano",
+         "g": 120
+        },
+        {
+         "f": "almendras naturales",
+         "g": 15
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Bacalao con tomate y patata",
+       "receta": "bacalao_tomate",
+       "items": [
+        {
+         "f": "bacalao desalado",
+         "g": 230
+        },
+        {
+         "f": "tomate triturado",
+         "g": 150
+        },
+        {
+         "f": "pimiento rojo",
+         "g": 60
+        },
+        {
+         "f": "cebolla",
+         "g": 50
+        },
+        {
+         "f": "patata",
+         "g": 230
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        },
+        {
+         "f": "pan integral",
+         "g": 30
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Queso batido con arándanos",
+       "receta": null,
+       "items": [
+        {
+         "f": "queso fresco batido 0%",
+         "g": 200
+        },
+        {
+         "f": "arándanos",
+         "g": 100
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Crema de champiñones y pechuga de pollo",
+       "receta": "crema_champis",
+       "items": [
+        {
+         "f": "champiñones",
+         "g": 250
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "patata",
+         "g": 60
+        },
+        {
+         "f": "leche desnatada",
+         "g": 100
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 6
+        },
+        {
+         "f": "pechuga de pollo",
+         "g": 150
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Jueves",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Skyr con avena y arándanos + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "skyr natural",
+         "g": 200
+        },
+        {
+         "f": "copos de avena",
+         "g": 50
+        },
+        {
+         "f": "arándanos",
+         "g": 80
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Pera",
+       "receta": null,
+       "items": [
+        {
+         "f": "pera",
+         "g": 170
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Alubias blancas con verduras y pavo",
+       "receta": "alubias",
+       "items": [
+        {
+         "f": "alubias blancas cocidas (bote, escurridas)",
+         "g": 280
+        },
+        {
+         "f": "pechuga de pavo",
+         "g": 70
+        },
+        {
+         "f": "zanahoria",
+         "g": 60
+        },
+        {
+         "f": "pimiento verde",
+         "g": 40
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "tomate triturado",
+         "g": 50
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Natillas proteicas de chocolate y fruta",
+       "receta": "natillas",
+       "items": [
+        {
+         "f": "leche desnatada",
+         "g": 125
+        },
+        {
+         "f": "maicena",
+         "g": 8
+        },
+        {
+         "f": "cacao puro desgrasado",
+         "g": 4
+        },
+        {
+         "f": "huevo",
+         "g": 14
+        },
+        {
+         "f": "proteína whey",
+         "g": 15
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Merluza a la plancha con ensalada",
+       "receta": null,
+       "items": [
+        {
+         "f": "merluza (lomos)",
+         "g": 220
+        },
+        {
+         "f": "lechuga / mezcla de hojas",
+         "g": 80
+        },
+        {
+         "f": "tomate",
+         "g": 120
+        },
+        {
+         "f": "pan integral",
+         "g": 50
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Viernes",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con aguacate y huevo + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "aguacate",
+         "g": 40
+        },
+        {
+         "f": "huevo",
+         "g": 55
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Skyr con nueces",
+       "receta": null,
+       "items": [
+        {
+         "f": "skyr natural",
+         "g": 150
+        },
+        {
+         "f": "nueces",
+         "g": 15
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Lubina al Varoma con brócoli y patata",
+       "receta": "lubina_varoma",
+       "items": [
+        {
+         "f": "lubina",
+         "g": 200
+        },
+        {
+         "f": "brócoli",
+         "g": 200
+        },
+        {
+         "f": "patata",
+         "g": 250
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 6
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Tostada integral con queso fresco",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 50
+        },
+        {
+         "f": "queso fresco Burgos 0%",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 50
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Hamburguesa casera de pavo con ensalada",
+       "receta": null,
+       "items": [
+        {
+         "f": "pavo picado",
+         "g": 160
+        },
+        {
+         "f": "claras de huevo",
+         "g": 20
+        },
+        {
+         "f": "pan integral",
+         "g": 60
+        },
+        {
+         "f": "lechuga / mezcla de hojas",
+         "g": 50
+        },
+        {
+         "f": "tomate",
+         "g": 80
+        },
+        {
+         "f": "cebolla",
+         "g": 20
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Sábado",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con pavo y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Mandarinas y almendras",
+       "receta": null,
+       "items": [
+        {
+         "f": "mandarina",
+         "g": 160
+        },
+        {
+         "f": "almendras naturales",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Espaguetis integrales con boloñesa de ternera",
+       "receta": "bolonesa",
+       "items": [
+        {
+         "f": "pasta integral (seca)",
+         "g": 90
+        },
+        {
+         "f": "carne picada de ternera magra",
+         "g": 140
+        },
+        {
+         "f": "tomate triturado",
+         "g": 150
+        },
+        {
+         "f": "zanahoria",
+         "g": 40
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Natillas proteicas de chocolate y fruta",
+       "receta": "natillas",
+       "items": [
+        {
+         "f": "leche desnatada",
+         "g": 125
+        },
+        {
+         "f": "maicena",
+         "g": 8
+        },
+        {
+         "f": "cacao puro desgrasado",
+         "g": 4
+        },
+        {
+         "f": "huevo",
+         "g": 14
+        },
+        {
+         "f": "proteína whey",
+         "g": 15
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Crema de calabaza y puerro con huevo y jamón",
+       "receta": "crema_calabaza_puerro",
+       "items": [
+        {
+         "f": "calabaza",
+         "g": 250
+        },
+        {
+         "f": "puerro",
+         "g": 80
+        },
+        {
+         "f": "patata",
+         "g": 50
+        },
+        {
+         "f": "queso fresco batido 0%",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 6
+        },
+        {
+         "f": "huevo",
+         "g": 110
+        },
+        {
+         "f": "jamón serrano",
+         "g": 30
+        },
+        {
+         "f": "pan integral",
+         "g": 30
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Domingo",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con queso fresco y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "queso fresco Burgos 0%",
+         "g": 80
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Dos lonchas de jamón serrano y mandarinas",
+       "receta": null,
+       "items": [
+        {
+         "f": "jamón serrano",
+         "g": 30
+        },
+        {
+         "f": "mandarina",
+         "g": 160
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Pollo asado con patatas y ensalada",
+       "receta": null,
+       "items": [
+        {
+         "f": "pechuga de pollo",
+         "g": 200
+        },
+        {
+         "f": "patata",
+         "g": 250
+        },
+        {
+         "f": "lechuga / mezcla de hojas",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 100
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Skyr con plátano",
+       "receta": null,
+       "items": [
+        {
+         "f": "skyr natural",
+         "g": 150
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Ensalada de atún, huevo y patata",
+       "receta": null,
+       "items": [
+        {
+         "f": "atún al natural (escurrido)",
+         "g": 104
+        },
+        {
+         "f": "huevo",
+         "g": 55
+        },
+        {
+         "f": "patata",
+         "g": 150
+        },
+        {
+         "f": "lechuga / mezcla de hojas",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 100
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        },
+        {
+         "f": "pan integral",
+         "g": 30
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "C": {
+   "nombre": "Menú C",
+   "dias": [
+    {
+     "dia": "Lunes",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con pavo y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Yogur con arándanos",
+       "receta": null,
+       "items": [
+        {
+         "f": "yogur natural desnatado",
+         "g": 125
+        },
+        {
+         "f": "arándanos",
+         "g": 100
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Lentejas con arroz y verduras",
+       "receta": "lentejas_arroz",
+       "items": [
+        {
+         "f": "lentejas pardinas (secas)",
+         "g": 90
+        },
+        {
+         "f": "arroz basmati (seco)",
+         "g": 30
+        },
+        {
+         "f": "zanahoria",
+         "g": 60
+        },
+        {
+         "f": "pimiento rojo",
+         "g": 40
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "tomate triturado",
+         "g": 40
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        },
+        {
+         "f": "huevo",
+         "g": 110
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Queso batido con kiwi",
+       "receta": null,
+       "items": [
+        {
+         "f": "queso fresco batido 0%",
+         "g": 200
+        },
+        {
+         "f": "kiwi",
+         "g": 160
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Crema de puerro y calabacín con tortilla francesa",
+       "receta": "crema_puerro",
+       "items": [
+        {
+         "f": "puerro",
+         "g": 120
+        },
+        {
+         "f": "calabacín",
+         "g": 200
+        },
+        {
+         "f": "patata",
+         "g": 50
+        },
+        {
+         "f": "queso fresco batido 0%",
+         "g": 50
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 6
+        },
+        {
+         "f": "huevo",
+         "g": 110
+        },
+        {
+         "f": "claras de huevo",
+         "g": 60
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Martes",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Porridge de avena con leche y plátano",
+       "receta": "porridge",
+       "items": [
+        {
+         "f": "copos de avena",
+         "g": 60
+        },
+        {
+         "f": "leche desnatada",
+         "g": 250
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Almendras y mandarinas",
+       "receta": null,
+       "items": [
+        {
+         "f": "almendras naturales",
+         "g": 20
+        },
+        {
+         "f": "mandarina",
+         "g": 160
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Pollo al limón con cuscús y calabacín",
+       "receta": "pollo_cuscus",
+       "items": [
+        {
+         "f": "pechuga de pollo",
+         "g": 170
+        },
+        {
+         "f": "cuscús integral (seco)",
+         "g": 80
+        },
+        {
+         "f": "calabacín",
+         "g": 120
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Tostada integral con pavo",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 60
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 50
+        },
+        {
+         "f": "tomate",
+         "g": 50
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Sepia a la plancha con ensalada",
+       "receta": null,
+       "items": [
+        {
+         "f": "sepia limpia",
+         "g": 250
+        },
+        {
+         "f": "lechuga / mezcla de hojas",
+         "g": 80
+        },
+        {
+         "f": "tomate",
+         "g": 120
+        },
+        {
+         "f": "pan integral",
+         "g": 50
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Miércoles",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con queso fresco y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "queso fresco Burgos 0%",
+         "g": 80
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Manzana y nueces",
+       "receta": null,
+       "items": [
+        {
+         "f": "manzana",
+         "g": 180
+        },
+        {
+         "f": "nueces",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Dorada al Varoma con patata y pimientos",
+       "receta": "dorada_varoma",
+       "items": [
+        {
+         "f": "dorada",
+         "g": 220
+        },
+        {
+         "f": "patata",
+         "g": 230
+        },
+        {
+         "f": "pimiento rojo",
+         "g": 100
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        },
+        {
+         "f": "pan integral",
+         "g": 30
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Natillas proteicas de chocolate y fruta",
+       "receta": "natillas",
+       "items": [
+        {
+         "f": "leche desnatada",
+         "g": 125
+        },
+        {
+         "f": "maicena",
+         "g": 8
+        },
+        {
+         "f": "cacao puro desgrasado",
+         "g": 4
+        },
+        {
+         "f": "huevo",
+         "g": 14
+        },
+        {
+         "f": "proteína whey",
+         "g": 15
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Crema de calabacín y pavo a la plancha",
+       "receta": "crema_calabacin",
+       "items": [
+        {
+         "f": "calabacín",
+         "g": 300
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "patata",
+         "g": 50
+        },
+        {
+         "f": "queso fresco batido 0%",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 6
+        },
+        {
+         "f": "pechuga de pavo",
+         "g": 150
+        },
+        {
+         "f": "pan integral",
+         "g": 40
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Jueves",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con aguacate y huevo + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "aguacate",
+         "g": 40
+        },
+        {
+         "f": "huevo",
+         "g": 55
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Kiwi y almendras",
+       "receta": null,
+       "items": [
+        {
+         "f": "kiwi",
+         "g": 160
+        },
+        {
+         "f": "almendras naturales",
+         "g": 15
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Garbanzos con calabaza y pavo",
+       "receta": "garbanzos_calabaza",
+       "items": [
+        {
+         "f": "garbanzos cocidos (bote, escurridos)",
+         "g": 260
+        },
+        {
+         "f": "calabaza",
+         "g": 150
+        },
+        {
+         "f": "pechuga de pavo",
+         "g": 70
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "tomate triturado",
+         "g": 40
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Skyr con plátano",
+       "receta": null,
+       "items": [
+        {
+         "f": "skyr natural",
+         "g": 150
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Berenjena rellena de pavo y tomate",
+       "receta": null,
+       "items": [
+        {
+         "f": "berenjena",
+         "g": 300
+        },
+        {
+         "f": "pavo picado",
+         "g": 160
+        },
+        {
+         "f": "tomate triturado",
+         "g": 80
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "mozzarella light",
+         "g": 30
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 6
+        },
+        {
+         "f": "pan integral",
+         "g": 30
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Viernes",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Skyr con avena y arándanos + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "skyr natural",
+         "g": 200
+        },
+        {
+         "f": "copos de avena",
+         "g": 50
+        },
+        {
+         "f": "arándanos",
+         "g": 80
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Pera",
+       "receta": null,
+       "items": [
+        {
+         "f": "pera",
+         "g": 170
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Salmón en papillote al Varoma con verduras y arroz",
+       "receta": "salmon_papillote",
+       "items": [
+        {
+         "f": "salmón (lomo)",
+         "g": 170
+        },
+        {
+         "f": "calabacín",
+         "g": 150
+        },
+        {
+         "f": "zanahoria",
+         "g": 80
+        },
+        {
+         "f": "arroz basmati (seco)",
+         "g": 70
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 4
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Tostada integral con queso fresco",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 50
+        },
+        {
+         "f": "queso fresco Burgos 0%",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 50
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Revuelto de espárragos y champiñones con jamón",
+       "receta": null,
+       "items": [
+        {
+         "f": "huevo",
+         "g": 110
+        },
+        {
+         "f": "claras de huevo",
+         "g": 100
+        },
+        {
+         "f": "espárragos verdes",
+         "g": 150
+        },
+        {
+         "f": "champiñones",
+         "g": 80
+        },
+        {
+         "f": "jamón serrano",
+         "g": 30
+        },
+        {
+         "f": "pan integral",
+         "g": 50
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Sábado",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con pavo y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "fiambre de pavo (+90% carne)",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Yogur natural con almendras",
+       "receta": null,
+       "items": [
+        {
+         "f": "yogur natural desnatado",
+         "g": 125
+        },
+        {
+         "f": "almendras naturales",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Ternera con pimientos y arroz",
+       "receta": "ternera_pimientos",
+       "items": [
+        {
+         "f": "ternera magra para guisar",
+         "g": 170
+        },
+        {
+         "f": "pimiento rojo",
+         "g": 60
+        },
+        {
+         "f": "pimiento verde",
+         "g": 60
+        },
+        {
+         "f": "cebolla",
+         "g": 50
+        },
+        {
+         "f": "tomate triturado",
+         "g": 60
+        },
+        {
+         "f": "arroz basmati (seco)",
+         "g": 80
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Natillas proteicas de chocolate y fruta",
+       "receta": "natillas",
+       "items": [
+        {
+         "f": "leche desnatada",
+         "g": 125
+        },
+        {
+         "f": "maicena",
+         "g": 8
+        },
+        {
+         "f": "cacao puro desgrasado",
+         "g": 4
+        },
+        {
+         "f": "huevo",
+         "g": 14
+        },
+        {
+         "f": "proteína whey",
+         "g": 15
+        },
+        {
+         "f": "plátano",
+         "g": 120
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Crema de zanahoria y merluza a la plancha",
+       "receta": "crema_zanahoria",
+       "items": [
+        {
+         "f": "zanahoria",
+         "g": 250
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "patata",
+         "g": 50
+        },
+        {
+         "f": "queso fresco batido 0%",
+         "g": 50
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 6
+        },
+        {
+         "f": "merluza (lomos)",
+         "g": 200
+        },
+        {
+         "f": "pan integral",
+         "g": 30
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "dia": "Domingo",
+     "comidas": [
+      {
+       "tipo": "Desayuno",
+       "plato": "Tostada integral con queso fresco y tomate + café con leche",
+       "receta": null,
+       "items": [
+        {
+         "f": "pan integral",
+         "g": 100
+        },
+        {
+         "f": "queso fresco Burgos 0%",
+         "g": 80
+        },
+        {
+         "f": "tomate",
+         "g": 60
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 5
+        },
+        {
+         "f": "leche desnatada",
+         "g": 150
+        }
+       ]
+      },
+      {
+       "tipo": "Media mañana",
+       "plato": "Dos lonchas de jamón serrano y mandarinas",
+       "receta": null,
+       "items": [
+        {
+         "f": "jamón serrano",
+         "g": 30
+        },
+        {
+         "f": "mandarina",
+         "g": 160
+        }
+       ]
+      },
+      {
+       "tipo": "Comida",
+       "plato": "Arroz meloso de pollo y verduras",
+       "receta": "arroz_meloso",
+       "items": [
+        {
+         "f": "pechuga de pollo",
+         "g": 160
+        },
+        {
+         "f": "arroz redondo (seco)",
+         "g": 85
+        },
+        {
+         "f": "guisantes congelados",
+         "g": 60
+        },
+        {
+         "f": "pimiento rojo",
+         "g": 50
+        },
+        {
+         "f": "tomate triturado",
+         "g": 50
+        },
+        {
+         "f": "cebolla",
+         "g": 40
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      },
+      {
+       "tipo": "Merienda",
+       "plato": "Skyr con arándanos y nueces",
+       "receta": null,
+       "items": [
+        {
+         "f": "skyr natural",
+         "g": 150
+        },
+        {
+         "f": "arándanos",
+         "g": 100
+        },
+        {
+         "f": "nueces",
+         "g": 20
+        }
+       ]
+      },
+      {
+       "tipo": "Cena",
+       "plato": "Ensalada templada de garbanzos, atún y huevo",
+       "receta": null,
+       "items": [
+        {
+         "f": "garbanzos cocidos (bote, escurridos)",
+         "g": 120
+        },
+        {
+         "f": "atún al natural (escurrido)",
+         "g": 104
+        },
+        {
+         "f": "huevo",
+         "g": 55
+        },
+        {
+         "f": "lechuga / mezcla de hojas",
+         "g": 60
+        },
+        {
+         "f": "tomate",
+         "g": 100
+        },
+        {
+         "f": "aceite de oliva virgen extra",
+         "g": 10
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "rotacion": {
+  "inicio": "2026-10-19",
+  "orden": [
+   "A",
+   "B",
+   "C"
+  ]
+ },
+ "recetas": {
+  "lentejas": {
+   "nombre": "Lentejas estofadas con verduras y pavo",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon en el vaso la cebolla, el pimiento, 1 diente de ajo y la zanahoria troceados. Trocea 5 s / vel 5 y baja los restos con la espátula.",
+    "Añade el aceite y sofríe 7 min / 120 °C / vel 1.",
+    "Incorpora el pavo en dados, el tomate triturado, 1 cucharadita de pimentón y 1 hoja de laurel. Sofríe 3 min / 120 °C / giro a la izquierda / vel cuchara.",
+    "Añade las lentejas lavadas, la patata en trozos pequeños, 700 g de agua o caldo y sal. Cocina 40 min / 100 °C / giro a la izquierda / vel cuchara.",
+    "Deja reposar 5 min con el vaso cerrado. Si queda caldoso, cocina 5 min más / Varoma / giro a la izquierda sin cubilete."
+   ],
+   "nota": "Se puede hacer el domingo y dejar en la nevera hasta el lunes (aguanta 3–4 días).",
+   "pasos_sin_tm": [
+    "Pica la cebolla, el pimiento, 1 diente de ajo y la zanahoria.",
+    "En una olla, sofríe la verdura con el aceite 7–8 min a fuego medio.",
+    "Añade el pavo en dados, el tomate triturado, 1 cucharadita de pimentón y 1 hoja de laurel; rehoga 3 min.",
+    "Añade las lentejas lavadas, la patata en trozos pequeños, 700 g de agua o caldo y sal. Cuece tapado a fuego suave 40–45 min, removiendo de vez en cuando.",
+    "Deja reposar 5 min. Si queda caldoso, cuece unos minutos destapado."
+   ]
+  },
+  "crema_calabacin": {
+   "nombre": "Crema de calabacín",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 5 min / 120 °C / vel 1.",
+    "Añade el calabacín (con piel) y la patata troceados y agua hasta cubrir a ras (unos 300 g). Cocina 20 min / 100 °C / vel 1.",
+    "Añade el queso fresco batido y tritura 1 min subiendo progresivamente de vel 5 a vel 10.",
+    "Mientras, haz la pechuga a la plancha (o 12 min en la freidora de aire a 190 °C)."
+   ],
+   "nota": "Duplica las cantidades y guarda la mitad para otra cena; se congela bien sin el queso.",
+   "pasos_sin_tm": [
+    "Pica la cebolla y 1 ajo y sofríelos con el aceite en una olla 5 min.",
+    "Añade el calabacín (con piel) y la patata troceados y agua hasta cubrir a ras (unos 300 g). Cuece 20 min a fuego medio.",
+    "Añade el queso fresco batido y tritura con la batidora hasta que quede fina.",
+    "Mientras, haz la pechuga a la plancha (o 12 min en la freidora de aire a 190 °C)."
+   ]
+  },
+  "pollo_curry": {
+   "nombre": "Pollo al curry suave con arroz basmati",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon 1.000 g de agua con sal en el vaso, inserta el cestillo con el arroz lavado y cuece 14 min / 100 °C / vel 4. Retira y reserva el arroz; vacía el vaso.",
+    "Trocea la cebolla, el pimiento y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 7 min / 120 °C / vel 1.",
+    "Añade el pollo en dados, 1 cucharada de curry y sal. Cocina 12 min / 100 °C / giro a la izquierda / vel cuchara.",
+    "Fuera del fuego, añade el yogur y mezcla 20 s / giro a la izquierda / vel cuchara. No lo calientes más para que no se corte."
+   ],
+   "nota": "El arroz se puede hacer en el cestillo a la vez que el sofrito de otra receta para ahorrar tiempo.",
+   "pasos_sin_tm": [
+    "Cuece el arroz lavado en abundante agua con sal 12–14 min y escúrrelo.",
+    "Pica la cebolla, el pimiento y 1 ajo y sofríelos con el aceite en una sartén honda 7 min.",
+    "Añade el pollo en dados, 1 cucharada de curry y sal; cocina 10–12 min a fuego medio removiendo.",
+    "Fuera del fuego, añade el yogur y mezcla. No lo calientes más para que no se corte."
+   ]
+  },
+  "natillas": {
+   "nombre": "Natillas proteicas de chocolate (4 raciones)",
+   "tm": true,
+   "raciones": "4 (2 el martes y 2 el viernes)",
+   "pasos": [
+    "Pon en el vaso 500 g de leche desnatada, 32 g de maicena, 16 g de cacao puro, 1 huevo y edulcorante al gusto. Mezcla 10 s / vel 4.",
+    "Cocina 8 min / 90 °C / vel 4.",
+    "Deja templar 10 min con el vaso abierto (por debajo de 60 °C) y añade 60 g de whey de chocolate. Mezcla 20 s / vel 4.",
+    "Reparte en 4 tarros y guarda en la nevera. Aguantan 4 días."
+   ],
+   "nota": "La whey se añade al final y templada para que no se cuaje ni haga grumos. Las cantidades de la tabla son por ración.",
+   "pasos_sin_tm": [
+    "En un cazo, bate en frío 500 g de leche desnatada, 32 g de maicena, 16 g de cacao puro, 1 huevo y edulcorante al gusto.",
+    "Calienta a fuego medio-bajo sin dejar de remover con varillas hasta que espese (8–10 min); que no hierva fuerte.",
+    "Deja templar 10 min (por debajo de 60 °C) y añade 60 g de whey de chocolate batiendo bien.",
+    "Reparte en 4 tarros y guarda en la nevera. Aguantan 4 días."
+   ]
+  },
+  "merluza_varoma": {
+   "nombre": "Merluza en salsa verde con patata y judías al Varoma",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon 600 g de agua en el vaso. Coloca la patata en rodajas de 1 cm en el cestillo e insértalo.",
+    "Pon las judías verdes en el recipiente Varoma y la merluza salpimentada en la bandeja Varoma.",
+    "Cocina 25 min / Varoma / vel 1. Si la merluza es fina, colócala a los 10 min (cocina 15 min).",
+    "Salsa verde: vacía el vaso dejando 200 g del caldo. Añade 2 ajos, un puñado de perejil, la harina y el aceite. Tritura 10 s / vel 7 y cocina 4 min / 100 °C / vel 2. Sirve por encima."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Cuece la patata en rodajas de 1 cm en agua con sal 15 min; en los últimos 8 min añade las judías verdes (o hazlas al vapor).",
+    "Haz la merluza salpimentada al vapor 8–10 min (o en la sartén a fuego suave, tapada, con un chorrito de agua).",
+    "Salsa verde: sofríe 2 ajos picados en el aceite, añade la harina, remueve 1 min y añade poco a poco 200 g del agua de cocer y un puñado de perejil picado. Cocina 4 min hasta que espese.",
+    "Sirve la salsa por encima del pescado."
+   ]
+  },
+  "crema_calabaza": {
+   "nombre": "Crema de calabaza",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla 5 s / vel 5. Añade el aceite y sofríe 5 min / 120 °C / vel 1.",
+    "Añade la calabaza y la zanahoria troceadas, una pizca de comino y unos 250 g de agua. Cocina 20 min / 100 °C / vel 1.",
+    "Añade el queso fresco batido y tritura 1 min subiendo de vel 5 a vel 10.",
+    "Haz las gambas a la plancha con ajo y perejil, o 5 min en la freidora de aire a 200 °C."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Pica la cebolla y sofríela con el aceite en una olla 5 min.",
+    "Añade la calabaza y la zanahoria troceadas, una pizca de comino y unos 250 g de agua. Cuece 20 min.",
+    "Añade el queso fresco batido y tritura con la batidora.",
+    "Haz las gambas a la plancha con ajo y perejil, o 5 min en la freidora de aire a 200 °C."
+   ]
+  },
+  "garbanzos": {
+   "nombre": "Garbanzos con espinacas y huevo",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon 500 g de agua en el vaso y los huevos en el recipiente Varoma. Cocina 14 min / Varoma / vel 1. Enfría los huevos en agua fría y vacía el vaso.",
+    "Trocea la cebolla y 2 ajos 5 s / vel 5. Añade el aceite y sofríe 5 min / 120 °C / vel 1.",
+    "Añade el tomate triturado, 1 cucharadita de pimentón y comino. Cocina 3 min / 120 °C / vel 1.",
+    "Añade las espinacas, los garbanzos escurridos, 100 g de agua y sal. Cocina 8 min / 100 °C / giro a la izquierda / vel cuchara.",
+    "Sirve con los huevos cocidos en cuartos por encima."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Cuece los huevos 10 min en agua hirviendo, enfríalos y pélalos.",
+    "Pica la cebolla y 2 ajos y sofríelos con el aceite en una cazuela 5 min.",
+    "Añade el tomate triturado, 1 cucharadita de pimentón y comino; cocina 3 min.",
+    "Añade las espinacas, los garbanzos escurridos, 100 g de agua y sal. Cocina 8 min a fuego suave.",
+    "Sirve con los huevos cocidos en cuartos por encima."
+   ]
+  },
+  "salmon_varoma": {
+   "nombre": "Salmón al Varoma con brócoli y patata",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon 600 g de agua en el vaso y la patata en rodajas en el cestillo.",
+    "Coloca el brócoli en ramitos en el recipiente Varoma y el salmón salpimentado (con una rodaja de limón) en la bandeja.",
+    "Cocina 22 min / Varoma / vel 1.",
+    "Aliña en el plato con el aceite en crudo y un poco de limón."
+   ],
+   "nota": "Alternativa: salmón en la freidora de aire 10–12 min a 190 °C.",
+   "pasos_sin_tm": [
+    "Cuece la patata en rodajas en agua con sal 15 min (o al vapor 20 min).",
+    "Haz el brócoli al vapor o cocido 6–8 min, que quede al dente.",
+    "Haz el salmón salpimentado a la plancha 3–4 min por lado, o al horno 12 min a 200 °C con una rodaja de limón.",
+    "Aliña en el plato con el aceite en crudo y un poco de limón."
+   ]
+  },
+  "albondigas": {
+   "nombre": "Albóndigas de pavo en salsa de tomate con arroz integral",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Cuece el arroz integral en el cestillo con 1.000 g de agua y sal: 30 min / 100 °C / vel 4. Reserva y vacía el vaso.",
+    "Mezcla a mano el pavo picado con la clara, 1 ajo picado, perejil, sal y pimienta. Forma albóndigas pequeñas.",
+    "Trocea la cebolla y la zanahoria 5 s / vel 5. Añade el aceite y sofríe 6 min / 120 °C / vel 1. Añade el tomate triturado y una pizca de orégano; tritura 20 s / vel 7.",
+    "Coloca las albóndigas en el recipiente Varoma, ponlo encima del vaso con la salsa y cocina 25 min / Varoma / vel 1.",
+    "Pasa las albóndigas a la salsa y sirve con el arroz."
+   ],
+   "nota": "Se cocinan al vapor sobre la salsa: sin freír y sin pan rallado.",
+   "pasos_sin_tm": [
+    "Cuece el arroz integral en abundante agua con sal 30 min y escúrrelo.",
+    "Mezcla a mano el pavo picado con la clara, 1 ajo picado, perejil, sal y pimienta. Forma albóndigas pequeñas.",
+    "Pica la cebolla y la zanahoria y sofríelas con el aceite 6 min. Añade el tomate triturado y una pizca de orégano y tritura la salsa.",
+    "Añade las albóndigas a la salsa, tapa y cocina 20 min a fuego suave, dándoles la vuelta a mitad.",
+    "Sirve con el arroz."
+   ]
+  },
+  "pizza_berenjena": {
+   "nombre": "Pizza de base de berenjena",
+   "tm": false,
+   "raciones": "2",
+   "pasos": [
+    "Corta la berenjena en rodajas de 1 cm a lo largo, sala y deja 10 min. Sécala con papel.",
+    "Pinta con el aceite y hornea 12 min a 200 °C (o 10 min en la freidora de aire a 190 °C).",
+    "Cubre con tomate triturado, orégano, pavo en tiras, champiñón laminado y mozzarella.",
+    "Gratina 6–8 min a 200 °C hasta que se funda el queso."
+   ],
+   "nota": "Horno o freidora de aire; no necesita Thermomix."
+  },
+  "ternera": {
+   "nombre": "Ternera guisada con verduras y patata",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla, el pimiento y 2 ajos 5 s / vel 5. Añade el aceite y sofríe 7 min / 120 °C / vel 1.",
+    "Añade la ternera en dados con sal y pimienta. Rehoga 5 min / 120 °C / giro a la izquierda / vel cuchara.",
+    "Añade el tomate triturado, la zanahoria en rodajas, 1 hoja de laurel y 300 g de caldo. Cocina 40 min / 100 °C / giro a la izquierda / vel cuchara.",
+    "Añade la patata en dados y cocina 20 min más / 100 °C / giro a la izquierda / vel cuchara."
+   ],
+   "nota": "Si tiene mucho caldo, los últimos 5 min sin cubilete a temperatura Varoma.",
+   "pasos_sin_tm": [
+    "Pica la cebolla, el pimiento y 2 ajos y sofríelos con el aceite en una olla 7 min.",
+    "Añade la ternera en dados con sal y pimienta y dórala 5 min.",
+    "Añade el tomate triturado, la zanahoria en rodajas, 1 hoja de laurel y 300 g de caldo. Tapa y cuece a fuego suave 45–50 min (15 min en olla exprés).",
+    "Añade la patata en dados y cuece 20 min más, hasta que esté tierna."
+   ]
+  },
+  "crema_puerro": {
+   "nombre": "Crema de puerro y calabacín",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea el puerro 5 s / vel 5. Añade el aceite y sofríe 6 min / 120 °C / vel 1.",
+    "Añade el calabacín y la patata troceados y unos 300 g de agua. Cocina 20 min / 100 °C / vel 1.",
+    "Añade el queso fresco batido y tritura 1 min subiendo de vel 5 a vel 10.",
+    "Haz el revuelto en sartén antiadherente con los huevos y las claras."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Pica el puerro y sofríelo con el aceite en una olla 6 min.",
+    "Añade el calabacín y la patata troceados y unos 300 g de agua. Cuece 20 min.",
+    "Añade el queso fresco batido y tritura con la batidora.",
+    "Haz el revuelto en sartén antiadherente con los huevos y las claras."
+   ]
+  },
+  "porridge": {
+   "nombre": "Porridge de avena con leche y plátano",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon en el vaso la leche, los copos de avena y una pizca de canela.",
+    "Cocina 7 min / 90 °C / giro a la izquierda / vel cuchara.",
+    "Sirve y añade el plátano en rodajas por encima."
+   ],
+   "nota": "Si lo quieres más líquido, añade un chorrito de leche al final.",
+   "pasos_sin_tm": [
+    "Pon en un cazo la leche, los copos de avena y una pizca de canela.",
+    "Cocina a fuego medio-bajo 5–7 min removiendo hasta que espese (o 3 min en el microondas, removiendo a mitad).",
+    "Sirve y añade el plátano en rodajas por encima."
+   ]
+  },
+  "arroz_caldoso": {
+   "nombre": "Arroz caldoso de pollo y verduras",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla, el pimiento y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 7 min / 120 °C / vel 1.",
+    "Añade el pollo en dados, el tomate triturado, 1 cucharadita de pimentón y sal. Cocina 5 min / 120 °C / giro a la izquierda / vel cuchara.",
+    "Añade el arroz, las judías verdes troceadas, 700 g de agua o caldo y un poco de colorante o azafrán. Cocina 18 min / 100 °C / giro a la izquierda / vel cuchara.",
+    "Deja reposar 3 min y sirve enseguida, que el arroz sigue absorbiendo caldo."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Pica la cebolla, el pimiento y 1 ajo y sofríelos con el aceite en una cazuela 7 min.",
+    "Añade el pollo en dados, el tomate triturado, 1 cucharadita de pimentón y sal; cocina 5 min.",
+    "Añade el arroz, las judías verdes troceadas, 700 g de agua o caldo y un poco de colorante o azafrán. Cuece 18 min a fuego medio.",
+    "Deja reposar 3 min y sirve enseguida, que el arroz sigue absorbiendo caldo."
+   ]
+  },
+  "crema_zanahoria": {
+   "nombre": "Crema de zanahoria",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla 5 s / vel 5. Añade el aceite y sofríe 5 min / 120 °C / vel 1.",
+    "Añade la zanahoria y la patata troceadas, un trocito de jengibre si os gusta y unos 300 g de agua. Cocina 22 min / 100 °C / vel 1.",
+    "Añade el queso fresco batido y tritura 1 min subiendo de vel 5 a vel 10.",
+    "Haz la proteína a la plancha mientras se cocina la crema."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Pica la cebolla y sofríela con el aceite en una olla 5 min.",
+    "Añade la zanahoria y la patata troceadas, un trocito de jengibre si os gusta y unos 300 g de agua. Cuece 22 min.",
+    "Añade el queso fresco batido y tritura con la batidora.",
+    "Haz la proteína a la plancha mientras se cocina la crema."
+   ]
+  },
+  "pavo_champis": {
+   "nombre": "Pavo en salsa de champiñones con patata",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon 500 g de agua en el vaso y la patata en dados en el cestillo. Cuece 20 min / Varoma / vel 1. Reserva la patata y vacía el vaso.",
+    "Trocea la cebolla 5 s / vel 5. Añade el aceite y sofríe 5 min / 120 °C / vel 1.",
+    "Añade los champiñones laminados y el pavo en dados con sal y pimienta. Cocina 10 min / 100 °C / giro a la izquierda / vel cuchara.",
+    "Disuelve la maicena en la leche, añádela y cocina 4 min / 90 °C / giro a la izquierda / vel cuchara hasta que espese."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Cuece la patata en dados en agua con sal 15 min (o al vapor 20 min) y resérvala.",
+    "Pica la cebolla y sofríela con el aceite en una sartén honda 5 min.",
+    "Añade los champiñones laminados y el pavo en dados con sal y pimienta; cocina 10 min.",
+    "Disuelve la maicena en la leche fría, añádela y cocina 3–4 min removiendo hasta que espese."
+   ]
+  },
+  "bacalao_tomate": {
+   "nombre": "Bacalao con tomate y patata",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla, el pimiento y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 7 min / 120 °C / vel 1.",
+    "Añade el tomate triturado, sal y una pizca de azúcar o edulcorante. Coloca la patata en rodajas en el cestillo dentro del vaso.",
+    "Pon el bacalao desalado en la bandeja Varoma. Cocina 20 min / Varoma / vel 1.",
+    "Sirve el bacalao sobre la salsa de tomate con la patata al lado."
+   ],
+   "nota": "Si el bacalao es de lomo grueso, déjalo 25 min.",
+   "pasos_sin_tm": [
+    "Pica la cebolla, el pimiento y 1 ajo y sofríelos con el aceite en una cazuela 7 min.",
+    "Añade el tomate triturado, sal y una pizca de azúcar o edulcorante; cocina 10 min.",
+    "Cuece la patata en rodajas en agua con sal 15 min.",
+    "Pon el bacalao desalado sobre la salsa, tapa y cocina 8–10 min a fuego suave. Sirve con la patata al lado."
+   ]
+  },
+  "crema_champis": {
+   "nombre": "Crema de champiñones",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 5 min / 120 °C / vel 1.",
+    "Añade los champiñones y la patata troceados y 150 g de agua. Cocina 18 min / 100 °C / vel 1.",
+    "Añade la leche y tritura 1 min subiendo de vel 5 a vel 10. Ajusta de sal y pimienta.",
+    "Haz la pechuga a la plancha o 12 min en la freidora de aire a 190 °C."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Pica la cebolla y 1 ajo y sofríelos con el aceite en una olla 5 min.",
+    "Añade los champiñones y la patata troceados y 150 g de agua. Cuece 18 min.",
+    "Añade la leche y tritura con la batidora. Ajusta de sal y pimienta.",
+    "Haz la pechuga a la plancha o 12 min en la freidora de aire a 190 °C."
+   ]
+  },
+  "alubias": {
+   "nombre": "Alubias blancas con verduras y pavo",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla, el pimiento, la zanahoria y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 7 min / 120 °C / vel 1.",
+    "Añade el pavo en dados, el tomate triturado y 1 cucharadita de pimentón. Cocina 5 min / 120 °C / giro a la izquierda / vel cuchara.",
+    "Añade las alubias escurridas y lavadas, 250 g de agua, 1 hoja de laurel y sal. Cocina 12 min / 100 °C / giro a la izquierda / vel cuchara."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Pica la cebolla, el pimiento, la zanahoria y 1 ajo y sofríelos con el aceite en una cazuela 7 min.",
+    "Añade el pavo en dados, el tomate triturado y 1 cucharadita de pimentón; cocina 5 min.",
+    "Añade las alubias escurridas y lavadas, 250 g de agua, 1 hoja de laurel y sal. Cuece 12 min a fuego suave."
+   ]
+  },
+  "lubina_varoma": {
+   "nombre": "Lubina al Varoma con brócoli y patata",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon 600 g de agua en el vaso y la patata en rodajas en el cestillo.",
+    "Coloca el brócoli en el recipiente Varoma y los lomos de lubina salpimentados en la bandeja.",
+    "Cocina 20 min / Varoma / vel 1.",
+    "Aliña con el aceite en crudo, limón y perejil."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Cuece la patata en rodajas en agua con sal 15 min (o al vapor 20 min).",
+    "Haz el brócoli al vapor o cocido 6–8 min.",
+    "Haz los lomos de lubina salpimentados a la plancha 3 min por lado (por la piel primero) o al horno 10–12 min a 200 °C.",
+    "Aliña con el aceite en crudo, limón y perejil."
+   ]
+  },
+  "bolonesa": {
+   "nombre": "Espaguetis integrales con boloñesa de ternera",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla, la zanahoria y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 7 min / 120 °C / vel 1.",
+    "Añade la carne picada y sofríe 5 min / 120 °C / giro a la izquierda / vel cuchara.",
+    "Añade el tomate triturado, orégano y sal. Cocina 20 min / 100 °C / giro a la izquierda / vel cuchara sin cubilete (pon el cestillo encima).",
+    "Mientras, cuece la pasta en una olla con agua y sal el tiempo del paquete. Escúrrela y sirve con la salsa."
+   ],
+   "nota": "La pasta en olla aparte sale mejor que en el vaso.",
+   "pasos_sin_tm": [
+    "Pica la cebolla, la zanahoria y 1 ajo y sofríelos con el aceite en una cazuela 7 min.",
+    "Añade la carne picada y dórala 5 min.",
+    "Añade el tomate triturado, orégano y sal y cocina 20 min a fuego suave, destapado, hasta que reduzca.",
+    "Mientras, cuece la pasta en una olla con agua y sal el tiempo del paquete. Escúrrela y sirve con la salsa."
+   ]
+  },
+  "crema_calabaza_puerro": {
+   "nombre": "Crema de calabaza y puerro",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon 500 g de agua en el vaso y los huevos en el recipiente Varoma: 14 min / Varoma / vel 1. Enfríalos y vacía el vaso.",
+    "Trocea el puerro 5 s / vel 5. Añade el aceite y sofríe 6 min / 120 °C / vel 1.",
+    "Añade la calabaza y la patata troceadas y unos 250 g de agua. Cocina 20 min / 100 °C / vel 1.",
+    "Añade el queso fresco batido, tritura 1 min de vel 5 a vel 10 y sirve con el huevo picado y el jamón en tiras."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Cuece los huevos 10 min en agua hirviendo, enfríalos y pélalos.",
+    "Pica el puerro y sofríelo con el aceite en una olla 6 min.",
+    "Añade la calabaza y la patata troceadas y unos 250 g de agua. Cuece 20 min.",
+    "Añade el queso fresco batido, tritura con la batidora y sirve con el huevo picado y el jamón en tiras."
+   ]
+  },
+  "lentejas_arroz": {
+   "nombre": "Lentejas con arroz y verduras",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon 500 g de agua en el vaso y los huevos en el recipiente Varoma: 14 min / Varoma / vel 1. Enfríalos y vacía el vaso.",
+    "Trocea la cebolla, el pimiento, la zanahoria y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 7 min / 120 °C / vel 1.",
+    "Añade el tomate, 1 cucharadita de pimentón, las lentejas lavadas, 800 g de agua, laurel y sal. Cocina 25 min / 100 °C / giro a la izquierda / vel cuchara.",
+    "Añade el arroz y cocina 15 min más / 100 °C / giro a la izquierda / vel cuchara. Sirve con el huevo cocido."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Cuece los huevos 10 min en agua hirviendo, enfríalos y pélalos.",
+    "Pica la cebolla, el pimiento, la zanahoria y 1 ajo y sofríelos con el aceite en una olla 7 min.",
+    "Añade el tomate, 1 cucharadita de pimentón, las lentejas lavadas, 800 g de agua, laurel y sal. Cuece tapado 25 min.",
+    "Añade el arroz y cuece 15 min más, removiendo de vez en cuando. Sirve con el huevo cocido."
+   ]
+  },
+  "pollo_cuscus": {
+   "nombre": "Pollo al limón con cuscús y calabacín",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 5 min / 120 °C / vel 1.",
+    "Añade el pollo en dados, el calabacín en dados, el zumo de medio limón, comino y sal. Cocina 12 min / 100 °C / giro a la izquierda / vel cuchara.",
+    "Cuscús: en un bol, cubre el cuscús con el mismo peso de agua hirviendo (puedes calentarla en el vaso antes) y una pizca de sal. Tapa 5 min y suéltalo con un tenedor."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Pica la cebolla y 1 ajo y sofríelos con el aceite en una sartén 5 min.",
+    "Añade el pollo en dados, el calabacín en dados, el zumo de medio limón, comino y sal. Cocina 12 min a fuego medio.",
+    "Cuscús: en un bol, cubre el cuscús con el mismo peso de agua hirviendo y una pizca de sal. Tapa 5 min y suéltalo con un tenedor."
+   ]
+  },
+  "dorada_varoma": {
+   "nombre": "Dorada al Varoma con patata y pimientos",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon 600 g de agua en el vaso y la patata en rodajas en el cestillo.",
+    "Coloca el pimiento en tiras en el recipiente Varoma y los lomos de dorada salpimentados en la bandeja.",
+    "Cocina 22 min / Varoma / vel 1.",
+    "Aliña con el aceite en crudo, ajo picado y perejil."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Cuece la patata en rodajas en agua con sal 15 min.",
+    "Asa el pimiento en tiras en una sartén con unas gotas de aceite 10 min.",
+    "Haz los lomos de dorada salpimentados a la plancha 3 min por lado o al horno 12 min a 200 °C sobre la patata.",
+    "Aliña con el aceite en crudo, ajo picado y perejil."
+   ]
+  },
+  "garbanzos_calabaza": {
+   "nombre": "Garbanzos con calabaza y pavo",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla y 2 ajos 5 s / vel 5. Añade el aceite y sofríe 5 min / 120 °C / vel 1.",
+    "Añade el pavo en dados, el tomate, pimentón y comino. Cocina 4 min / 120 °C / giro a la izquierda / vel cuchara.",
+    "Añade la calabaza en dados, los garbanzos escurridos, 200 g de agua y sal. Cocina 15 min / 100 °C / giro a la izquierda / vel cuchara."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Pica la cebolla y 2 ajos y sofríelos con el aceite en una cazuela 5 min.",
+    "Añade el pavo en dados, el tomate, pimentón y comino; cocina 4 min.",
+    "Añade la calabaza en dados, los garbanzos escurridos, 200 g de agua y sal. Cuece 15 min a fuego suave, hasta que la calabaza esté tierna."
+   ]
+  },
+  "salmon_papillote": {
+   "nombre": "Salmón en papillote al Varoma con verduras y arroz",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Pon 1.000 g de agua con sal en el vaso y el arroz lavado en el cestillo.",
+    "Haz dos paquetes de papel de horno con el calabacín y la zanahoria en bastones, el salmón encima, sal, eneldo y una rodaja de limón. Colócalos en el Varoma.",
+    "Cocina 18 min / Varoma / vel 4.",
+    "Aliña el arroz y las verduras con el aceite en crudo."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Cuece el arroz lavado en abundante agua con sal 12–14 min y escúrrelo.",
+    "Haz paquetes de papel de horno con el calabacín y la zanahoria en bastones, el salmón encima, sal, eneldo y una rodaja de limón.",
+    "Hornea los paquetes 15–18 min a 200 °C.",
+    "Aliña el arroz y las verduras con el aceite en crudo."
+   ]
+  },
+  "ternera_pimientos": {
+   "nombre": "Ternera con pimientos y arroz",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Cuece el arroz en el cestillo con 1.000 g de agua y sal 14 min / 100 °C / vel 4. Reserva y vacía el vaso.",
+    "Trocea la cebolla y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 5 min / 120 °C / vel 1.",
+    "Añade la ternera en tiras y los pimientos en tiras. Cocina 8 min / 120 °C / giro a la izquierda / vel cuchara.",
+    "Añade el tomate triturado, 150 g de agua, sal y pimienta. Cocina 25 min / 100 °C / giro a la izquierda / vel cuchara."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Cuece el arroz en abundante agua con sal 12–14 min y escúrrelo.",
+    "Pica la cebolla y 1 ajo y sofríelos con el aceite en una cazuela 5 min.",
+    "Añade la ternera en tiras y los pimientos en tiras; dora 8 min a fuego vivo.",
+    "Añade el tomate triturado, 150 g de agua, sal y pimienta. Tapa y cocina 25 min a fuego suave."
+   ]
+  },
+  "arroz_meloso": {
+   "nombre": "Arroz meloso de pollo y verduras",
+   "tm": true,
+   "raciones": "2",
+   "pasos": [
+    "Trocea la cebolla, el pimiento y 1 ajo 5 s / vel 5. Añade el aceite y sofríe 7 min / 120 °C / vel 1.",
+    "Añade el pollo en dados y el tomate. Cocina 5 min / 120 °C / giro a la izquierda / vel cuchara.",
+    "Añade el arroz, los guisantes, 500 g de caldo y sal. Cocina 16 min / 100 °C / giro a la izquierda / vel cuchara.",
+    "Reposa 3 min antes de servir."
+   ],
+   "nota": null,
+   "pasos_sin_tm": [
+    "Pica la cebolla, el pimiento y 1 ajo y sofríelos con el aceite en una cazuela 7 min.",
+    "Añade el pollo en dados y el tomate; cocina 5 min.",
+    "Añade el arroz, los guisantes, 500 g de caldo caliente y sal. Cuece 16–18 min a fuego medio, removiendo de vez en cuando.",
+    "Reposa 3 min antes de servir."
+   ]
+  }
+ },
+ "cocinado": {
+  "factores": {
+   "pechuga de pollo": 0.75,
+   "pechuga de pavo": 0.75,
+   "ternera magra para guisar": 0.7,
+   "pavo picado": 0.8,
+   "claras de huevo": 0.9,
+   "huevo": 0.9,
+   "merluza (lomos)": 0.85,
+   "salmón (lomo)": 0.85,
+   "gambas peladas": 0.8,
+   "cebolla": 0.7,
+   "pimiento rojo": 0.8,
+   "pimiento verde": 0.8,
+   "puerro": 0.85,
+   "tomate triturado": 0.85,
+   "espinacas": 0.35,
+   "calabacín": 0.95,
+   "calabaza": 0.95,
+   "zanahoria": 0.95,
+   "judías verdes": 0.95,
+   "brócoli": 0.95,
+   "arroz basmati (seco)": 3.0,
+   "arroz integral (seco)": 2.8
+  },
+  "recetas": {
+   "lentejas": [
+    {
+     "c": "Lentejas (todo el vaso)",
+     "items": [
+      "lentejas pardinas (secas)",
+      "pechuga de pavo",
+      "zanahoria",
+      "pimiento rojo",
+      "cebolla",
+      "patata",
+      "tomate triturado",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 700,
+     "evap": 0.15,
+     "olla": true,
+     "f": {
+      "lentejas pardinas (secas)": 1.0
+     }
+    }
+   ],
+   "crema_calabacin": [
+    {
+     "c": "Crema (todo el vaso)",
+     "items": [
+      "calabacín",
+      "cebolla",
+      "patata",
+      "queso fresco batido 0%",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 300,
+     "evap": 0.1,
+     "olla": true
+    },
+    {
+     "c": "Proteína a la plancha",
+     "items": [
+      "pechuga de pollo",
+      "pechuga de pavo"
+     ]
+    }
+   ],
+   "pollo_curry": [
+    {
+     "c": "Pollo al curry (vaso)",
+     "items": [
+      "pechuga de pollo",
+      "cebolla",
+      "pimiento rojo",
+      "yogur natural desnatado",
+      "aceite de oliva virgen extra"
+     ],
+     "olla": true
+    },
+    {
+     "c": "Arroz cocido (cestillo)",
+     "items": [
+      "arroz basmati (seco)"
+     ]
+    }
+   ],
+   "merluza_varoma": [
+    {
+     "c": "Merluza al vapor",
+     "items": [
+      "merluza (lomos)"
+     ]
+    },
+    {
+     "c": "Patata (cestillo)",
+     "items": [
+      "patata"
+     ]
+    },
+    {
+     "c": "Judías verdes",
+     "items": [
+      "judías verdes"
+     ]
+    },
+    {
+     "c": "Salsa verde",
+     "items": [
+      "harina de trigo",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 200,
+     "evap": 0.1,
+     "reparto": "merluza (lomos)",
+     "olla": true
+    }
+   ],
+   "crema_calabaza": [
+    {
+     "c": "Crema (todo el vaso)",
+     "items": [
+      "calabaza",
+      "zanahoria",
+      "cebolla",
+      "patata",
+      "queso fresco batido 0%",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 250,
+     "evap": 0.1,
+     "olla": true
+    },
+    {
+     "c": "Gambas a la plancha",
+     "items": [
+      "gambas peladas"
+     ]
+    }
+   ],
+   "garbanzos": [
+    {
+     "c": "Garbanzos con espinacas (vaso)",
+     "items": [
+      "garbanzos cocidos (bote, escurridos)",
+      "espinacas",
+      "cebolla",
+      "tomate triturado",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 100,
+     "evap": 0.2,
+     "olla": true
+    },
+    {
+     "c": "Huevo cocido",
+     "items": [
+      "huevo"
+     ],
+     "f": {
+      "huevo": 1.0
+     },
+     "ud": true
+    }
+   ],
+   "salmon_varoma": [
+    {
+     "c": "Salmón al vapor",
+     "items": [
+      "salmón (lomo)"
+     ]
+    },
+    {
+     "c": "Patata (cestillo)",
+     "items": [
+      "patata"
+     ]
+    },
+    {
+     "c": "Brócoli",
+     "items": [
+      "brócoli"
+     ]
+    }
+   ],
+   "albondigas": [
+    {
+     "c": "Albóndigas",
+     "items": [
+      "pavo picado",
+      "claras de huevo"
+     ]
+    },
+    {
+     "c": "Salsa de tomate (vaso)",
+     "items": [
+      "tomate triturado",
+      "cebolla",
+      "zanahoria",
+      "aceite de oliva virgen extra"
+     ],
+     "reparto": "pavo picado",
+     "olla": true
+    },
+    {
+     "c": "Arroz integral cocido",
+     "items": [
+      "arroz integral (seco)"
+     ]
+    }
+   ],
+   "ternera": [
+    {
+     "c": "Guiso (todo el vaso)",
+     "items": [
+      "ternera magra para guisar",
+      "patata",
+      "zanahoria",
+      "pimiento verde",
+      "cebolla",
+      "tomate triturado",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 300,
+     "evap": 0.25,
+     "olla": true
+    }
+   ],
+   "crema_puerro": [
+    {
+     "c": "Crema (todo el vaso)",
+     "items": [
+      "puerro",
+      "calabacín",
+      "patata",
+      "queso fresco batido 0%",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 300,
+     "evap": 0.1,
+     "olla": true
+    },
+    {
+     "c": "Revuelto",
+     "items": [
+      "huevo",
+      "claras de huevo"
+     ]
+    }
+   ],
+   "natillas": [
+    {
+     "c": "Natillas (1 tarro)",
+     "fijo": 155
+    }
+   ],
+   "porridge": [
+    {
+     "c": "Porridge (todo el vaso)",
+     "items": [
+      "copos de avena",
+      "leche desnatada"
+     ],
+     "olla": true
+    }
+   ],
+   "arroz_caldoso": [
+    {
+     "c": "Arroz caldoso (todo el vaso)",
+     "items": [
+      "pechuga de pollo",
+      "arroz redondo (seco)",
+      "judías verdes",
+      "pimiento rojo",
+      "tomate triturado",
+      "cebolla",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 700,
+     "evap": 0.2,
+     "olla": true,
+     "f": {
+      "arroz redondo (seco)": 1.0
+     }
+    }
+   ],
+   "crema_zanahoria": [
+    {
+     "c": "Crema (todo el vaso)",
+     "items": [
+      "zanahoria",
+      "cebolla",
+      "patata",
+      "queso fresco batido 0%",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 300,
+     "evap": 0.1,
+     "olla": true
+    },
+    {
+     "c": "Proteína a la plancha",
+     "items": [
+      "pechuga de pavo",
+      "merluza (lomos)"
+     ]
+    }
+   ],
+   "pavo_champis": [
+    {
+     "c": "Pavo con champiñones (vaso)",
+     "items": [
+      "pechuga de pavo",
+      "champiñones",
+      "cebolla",
+      "leche desnatada",
+      "maicena",
+      "aceite de oliva virgen extra"
+     ],
+     "olla": true,
+     "f": {
+      "champiñones": 0.6
+     }
+    },
+    {
+     "c": "Patata (cestillo)",
+     "items": [
+      "patata"
+     ]
+    }
+   ],
+   "bacalao_tomate": [
+    {
+     "c": "Bacalao al vapor",
+     "items": [
+      "bacalao desalado"
+     ]
+    },
+    {
+     "c": "Salsa de tomate (vaso)",
+     "items": [
+      "tomate triturado",
+      "pimiento rojo",
+      "cebolla",
+      "aceite de oliva virgen extra"
+     ],
+     "olla": true,
+     "reparto": "bacalao desalado"
+    },
+    {
+     "c": "Patata (cestillo)",
+     "items": [
+      "patata"
+     ]
+    }
+   ],
+   "crema_champis": [
+    {
+     "c": "Crema (todo el vaso)",
+     "items": [
+      "champiñones",
+      "cebolla",
+      "patata",
+      "leche desnatada",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 150,
+     "evap": 0.1,
+     "olla": true,
+     "f": {
+      "champiñones": 0.8
+     }
+    },
+    {
+     "c": "Pechuga a la plancha",
+     "items": [
+      "pechuga de pollo"
+     ]
+    }
+   ],
+   "alubias": [
+    {
+     "c": "Alubias (todo el vaso)",
+     "items": [
+      "alubias blancas cocidas (bote, escurridas)",
+      "pechuga de pavo",
+      "zanahoria",
+      "pimiento verde",
+      "cebolla",
+      "tomate triturado",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 250,
+     "evap": 0.2,
+     "olla": true
+    }
+   ],
+   "lubina_varoma": [
+    {
+     "c": "Lubina al vapor",
+     "items": [
+      "lubina"
+     ]
+    },
+    {
+     "c": "Patata (cestillo)",
+     "items": [
+      "patata"
+     ]
+    },
+    {
+     "c": "Brócoli",
+     "items": [
+      "brócoli"
+     ]
+    }
+   ],
+   "bolonesa": [
+    {
+     "c": "Boloñesa (vaso)",
+     "items": [
+      "carne picada de ternera magra",
+      "tomate triturado",
+      "zanahoria",
+      "cebolla",
+      "aceite de oliva virgen extra"
+     ],
+     "olla": true,
+     "f": {
+      "tomate triturado": 0.7
+     }
+    },
+    {
+     "c": "Pasta cocida",
+     "items": [
+      "pasta integral (seca)"
+     ],
+     "f": {
+      "pasta integral (seca)": 2.3
+     }
+    }
+   ],
+   "crema_calabaza_puerro": [
+    {
+     "c": "Crema (todo el vaso)",
+     "items": [
+      "calabaza",
+      "puerro",
+      "patata",
+      "queso fresco batido 0%",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 250,
+     "evap": 0.1,
+     "olla": true
+    },
+    {
+     "c": "Huevo cocido",
+     "items": [
+      "huevo"
+     ],
+     "f": {
+      "huevo": 1.0
+     },
+     "ud": true
+    }
+   ],
+   "lentejas_arroz": [
+    {
+     "c": "Lentejas con arroz (todo el vaso)",
+     "items": [
+      "lentejas pardinas (secas)",
+      "arroz basmati (seco)",
+      "zanahoria",
+      "pimiento rojo",
+      "cebolla",
+      "tomate triturado",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 800,
+     "evap": 0.15,
+     "olla": true,
+     "f": {
+      "lentejas pardinas (secas)": 1.0,
+      "arroz basmati (seco)": 1.0
+     }
+    },
+    {
+     "c": "Huevo cocido",
+     "items": [
+      "huevo"
+     ],
+     "f": {
+      "huevo": 1.0
+     },
+     "ud": true
+    }
+   ],
+   "pollo_cuscus": [
+    {
+     "c": "Pollo con calabacín (vaso)",
+     "items": [
+      "pechuga de pollo",
+      "calabacín",
+      "cebolla",
+      "aceite de oliva virgen extra"
+     ],
+     "olla": true
+    },
+    {
+     "c": "Cuscús hidratado",
+     "items": [
+      "cuscús integral (seco)"
+     ],
+     "f": {
+      "cuscús integral (seco)": 2.0
+     }
+    }
+   ],
+   "dorada_varoma": [
+    {
+     "c": "Dorada al vapor",
+     "items": [
+      "dorada"
+     ]
+    },
+    {
+     "c": "Patata (cestillo)",
+     "items": [
+      "patata"
+     ]
+    },
+    {
+     "c": "Pimientos",
+     "items": [
+      "pimiento rojo"
+     ]
+    }
+   ],
+   "garbanzos_calabaza": [
+    {
+     "c": "Garbanzos (todo el vaso)",
+     "items": [
+      "garbanzos cocidos (bote, escurridos)",
+      "calabaza",
+      "pechuga de pavo",
+      "cebolla",
+      "tomate triturado",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 200,
+     "evap": 0.2,
+     "olla": true
+    }
+   ],
+   "salmon_papillote": [
+    {
+     "c": "Papillote de salmón y verduras",
+     "items": [
+      "salmón (lomo)",
+      "calabacín",
+      "zanahoria"
+     ],
+     "f": {
+      "calabacín": 0.85,
+      "zanahoria": 0.9
+     }
+    },
+    {
+     "c": "Arroz cocido (cestillo)",
+     "items": [
+      "arroz basmati (seco)"
+     ]
+    }
+   ],
+   "ternera_pimientos": [
+    {
+     "c": "Ternera con pimientos (vaso)",
+     "items": [
+      "ternera magra para guisar",
+      "pimiento rojo",
+      "pimiento verde",
+      "cebolla",
+      "tomate triturado",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 150,
+     "evap": 0.3,
+     "olla": true
+    },
+    {
+     "c": "Arroz cocido (cestillo)",
+     "items": [
+      "arroz basmati (seco)"
+     ]
+    }
+   ],
+   "arroz_meloso": [
+    {
+     "c": "Arroz meloso (todo el vaso)",
+     "items": [
+      "pechuga de pollo",
+      "arroz redondo (seco)",
+      "guisantes congelados",
+      "pimiento rojo",
+      "tomate triturado",
+      "cebolla",
+      "aceite de oliva virgen extra"
+     ],
+     "agua": 500,
+     "evap": 0.25,
+     "olla": true,
+     "f": {
+      "arroz redondo (seco)": 1.0
+     }
+    }
+   ]
+  }
+ },
+ "despensa": [
+  "Café",
+  "Ajo",
+  "Laurel",
+  "Pimentón dulce",
+  "Comino",
+  "Curry en polvo",
+  "Orégano",
+  "Perejil fresco",
+  "Sal y pimienta",
+  "Caldo de verduras bajo en sal (1 L)",
+  "Edulcorante (eritritol o sucralosa)",
+  "Limón",
+  "Vinagre"
+ ],
+ "referencia": {
+  "kcal_dia": 1960,
+  "nota": "Cantidades 'g' pensadas para un adulto de ~1960 kcal/día; el motor las escala a cada persona."
+ }
+}

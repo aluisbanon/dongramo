@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv*/
+.DS_Store
+# Por si alguien apunta DON_GRAMO_HOME dentro del repo: los datos nunca se suben
+state/
+logs/
+config.json
+secrets.env

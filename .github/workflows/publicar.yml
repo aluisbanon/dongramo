@@ -1,0 +1,35 @@
+# Publicación: al subir una etiqueta vX.Y.Z (git tag v1.1.0 && git push --tags) comprueba todo y crea
+# la Release de GitHub con las notas del CHANGELOG. Los usuarios de Claude Code reciben la versión nueva
+# al actualizar el plugin (o solos, si tienen activada la actualización automática del catálogo).
+name: Publicar
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pruebas
+        run: python -m unittest discover -s tests
+      - name: La etiqueta coincide con la versión
+        run: python tools/check_release.py --tag "$GITHUB_REF_NAME"
+      - name: Notas de la versión desde el CHANGELOG
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          awk -v cab="## ${VERSION}" 'index($0, cab) == 1 {dentro = 1; next} /^## / {if (dentro) exit} dentro' CHANGELOG.md > notas.md
+          test -s notas.md || { echo "No hay entrada «## ${VERSION}» en CHANGELOG.md"; exit 1; }
+      - name: Crear la Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" --title "Don Gramo $GITHUB_REF_NAME" --notes-file notas.md --verify-tag

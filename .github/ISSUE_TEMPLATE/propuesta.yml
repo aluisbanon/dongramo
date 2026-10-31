@@ -1,0 +1,24 @@
+name: Propuesta
+description: Una mejora, una receta nueva o una idea
+labels: [propuesta]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Qué propones
+      options: [Mejora del funcionamiento, Receta o plato nuevo, Alimento que falta, Documentación, Otra cosa]
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: La idea
+      description: Qué problema resuelve y cómo te lo imaginas. Para una receta, ingredientes con gramos para un adulto y pasos.
+    validations:
+      required: true
+  - type: checkboxes
+    id: ayuda
+    attributes:
+      label: ¿Te animas?
+      options:
+        - label: Puedo mandar un pull request con el cambio

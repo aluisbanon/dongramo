@@ -1,0 +1,12 @@
+{
+  "name": "don-gramo",
+  "version": "1.0.0",
+  "description": "Entrenador y asistente de dieta para una persona, una pareja o una familia: menús semanales que se escalan a las calorías de cada uno, reajuste tras comer fuera, receta del día con los gramos de cada uno, lista de la compra, seguimiento de peso y revisión semanal. Thermomix, Cookidoo y bot de Telegram opcionales.",
+  "author": {
+    "name": "Antonio Luis Bañón Galiana"
+  },
+  "homepage": "https://github.com/rayotropic/don-gramo",
+  "repository": "https://github.com/rayotropic/don-gramo",
+  "license": "MIT",
+  "keywords": ["dieta", "nutricion", "menu", "thermomix", "cookidoo", "telegram", "familia", "espanol"]
+}
