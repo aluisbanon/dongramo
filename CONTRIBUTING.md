@@ -18,7 +18,7 @@ datos y patrones de tokens o emails personales.
 Solo necesitas `python3` (3.9 o superior) y git. El motor no tiene dependencias.
 
 ```
-git clone https://github.com/rayotropic/dongramo && cd dongramo
+git clone https://github.com/aluisbanon/dongramo && cd dongramo
 python3 -m unittest discover -s tests       # todas las pruebas, ~10 s
 python3 tools/check_release.py               # versiones, cabeceras y privacidad
 ```

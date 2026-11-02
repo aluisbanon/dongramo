@@ -3,10 +3,12 @@
   "version": "1.1.0",
   "description": "Extensión opcional y no oficial de Don Gramo: sube la receta del día a tu cuenta de Cookidoo con las cantidades de todos y los pasos guiados para la Thermomix, y busca recetas oficiales que cuadren con tu plan. Requiere el plugin dongramo. Sin relación con Vorwerk.",
   "author": {
-    "name": "Antonio Luis Bañón Galiana"
+    "name": "aluisbanon",
+    "email": "hola@aluisbanon.com",
+    "url": "https://aluisbanon.com"
   },
-  "homepage": "https://github.com/rayotropic/dongramo",
-  "repository": "https://github.com/rayotropic/dongramo",
+  "homepage": "https://github.com/aluisbanon/dongramo",
+  "repository": "https://github.com/aluisbanon/dongramo",
   "license": "MIT",
   "keywords": [
     "dongramo",

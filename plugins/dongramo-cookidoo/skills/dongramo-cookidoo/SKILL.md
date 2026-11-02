@@ -1,7 +1,7 @@
 ---
 name: dongramo-cookidoo
 license: MIT
-metadata: {"openclaw": {"emoji": "🍲", "homepage": "https://github.com/rayotropic/dongramo", "requires": {"bins": ["python3"]}}}
+metadata: {"openclaw": {"emoji": "🍲", "homepage": "https://github.com/aluisbanon/dongramo", "requires": {"bins": ["python3"]}}}
 description: Extensión de Don Gramo para Cookidoo (no oficial). Úsala cuando, dentro del plan de Don Gramo, pidan pasar o subir la receta del día a Cookidoo o a la Thermomix, añadirla a "Mi semana", poner sus ingredientes en la lista de la compra de Cookidoo, o buscar en el recetario oficial de Cookidoo un plato que cuadre con el plan.
 ---
 

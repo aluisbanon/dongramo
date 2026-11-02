@@ -2,7 +2,7 @@
 
 # Don Gramo
 
-[![CI](https://github.com/rayotropic/dongramo/actions/workflows/ci.yml/badge.svg)](https://github.com/rayotropic/dongramo/actions/workflows/ci.yml)
+[![CI](https://github.com/aluisbanon/dongramo/actions/workflows/ci.yml/badge.svg)](https://github.com/aluisbanon/dongramo/actions/workflows/ci.yml)
 
 **Entrenador y asistente de dieta para Claude**, para una persona, una pareja o una familia entera.
 Todos comen los mismos platos y cada uno recibe *sus* gramos, ajustados a sus calorías.
@@ -50,7 +50,7 @@ Si usas varias en la misma máquina, comparten los datos (`~/.dongramo`).
 ### Claude Code
 
 ```
-/plugin marketplace add rayotropic/dongramo
+/plugin marketplace add aluisbanon/dongramo
 /plugin install dongramo@dongramo
 ```
 
@@ -73,7 +73,7 @@ las calorías de partida y ya está. A partir de ahí, habla con él normalmente
 ### Codex y OpenClaw
 
 ```
-git clone https://github.com/rayotropic/dongramo && cd dongramo
+git clone https://github.com/aluisbanon/dongramo && cd dongramo
 ./instalar.sh codex          # o: ./instalar.sh openclaw   (añade --cookidoo si quieres la extensión)
 ```
 
@@ -110,7 +110,7 @@ Desde la 1.1 el proyecto se llama `dongramo`. Tus datos se pasan solos de `~/.do
 ```
 /plugin uninstall don-gramo@don-gramo
 /plugin marketplace remove don-gramo
-/plugin marketplace add rayotropic/dongramo
+/plugin marketplace add aluisbanon/dongramo
 /plugin install dongramo@dongramo
 ```
 
@@ -241,3 +241,5 @@ compatibilidad. Las recetas de este repositorio son propias.
 ## Licencia
 
 MIT. Ver [LICENSE](LICENSE).
+
+Hecho por [@aluisbanon](https://aluisbanon.com) · hola@aluisbanon.com

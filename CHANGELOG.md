@@ -13,6 +13,7 @@ de la 1.0 no pierdes nada:
 - Secretos `dongramo-telegram-bot/chat`; si solo están con el nombre antiguo, se usan esos.
 - En Linux, `bot/install.sh activar` quita las unidades `don-gramo-*` y crea las `dongramo-*`.
 - `instalar.sh` quita la copia antigua de la skill en Codex y `~/.agents/skills`.
+- El repositorio pasa a `aluisbanon/dongramo`; las direcciones antiguas redirigen.
 
 ## 1.0.0 · 2026-10-26
 

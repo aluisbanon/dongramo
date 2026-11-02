@@ -1,7 +1,7 @@
 ---
 name: dongramo
 license: MIT
-metadata: {"openclaw": {"emoji": "⚖️", "homepage": "https://github.com/rayotropic/dongramo", "requires": {"bins": ["python3"]}}}
+metadata: {"openclaw": {"emoji": "⚖️", "homepage": "https://github.com/aluisbanon/dongramo", "requires": {"bins": ["python3"]}}}
 description: Don Gramo, entrenador y asistente de dieta para una persona, una pareja o una familia, con menús semanales que se escalan a las calorías de cada uno y Thermomix opcional. Úsala para configurar el hogar, decir qué toca comer hoy y cuánto, registrar comidas fuera, extras o comidas saltadas y reajustar los días siguientes, cambiar platos o alimentos del menú, sacar la receta del día con los gramos de cada uno y la lista de la compra, anotar el peso (también desde capturas de básculas inteligentes), seguir el progreso y revisar calorías y objetivos. Actívala cuando alguien hable de su dieta, su menú, lo que ha comido, su peso o su plan de comidas, aunque no diga "Don Gramo".
 ---
 

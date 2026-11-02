@@ -271,7 +271,7 @@ class SinRestosDelNombreAntiguo(unittest.TestCase):
             pj = json.loads((RAIZ / p["source"] / ".claude-plugin" / "plugin.json").read_text())
             self.assertEqual(pj["name"], p["name"])
             self.assertEqual(pj["version"], p["version"])
-            self.assertIn("rayotropic/dongramo", pj["repository"])
+            self.assertIn("aluisbanon/dongramo", pj["repository"])
         for n in ("dongramo", "dongramo-cookidoo"):
             skill = RAIZ / "plugins" / n / "skills" / n / "SKILL.md"
             self.assertRegex(skill.read_text(encoding="utf-8"), rf"(?m)^name: {n}$")

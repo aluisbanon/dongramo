@@ -2,7 +2,8 @@
   "name": "dongramo",
   "description": "Don Gramo: entrenador y asistente de dieta para una persona, una pareja o una familia, con Thermomix y Telegram opcionales.",
   "owner": {
-    "name": "Antonio Luis Bañón Galiana"
+    "name": "aluisbanon",
+    "email": "hola@aluisbanon.com"
   },
   "plugins": [
     {
