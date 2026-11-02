@@ -53,7 +53,7 @@ jobs:
         run: |
           for f in instalar.sh plugins/dongramo/bot/install.sh plugins/dongramo-cookidoo/install.sh; do bash -n "$f"; done
           shellcheck -S error instalar.sh plugins/dongramo/bot/install.sh plugins/dongramo-cookidoo/install.sh
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
       - name: Validar catálogo y plugins con Claude Code
