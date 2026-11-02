@@ -1,21 +1,21 @@
 {
-  "name": "don-gramo",
+  "name": "dongramo",
   "description": "Don Gramo: entrenador y asistente de dieta para una persona, una pareja o una familia, con Thermomix y Telegram opcionales.",
   "owner": {
     "name": "Antonio Luis Bañón Galiana"
   },
   "plugins": [
     {
-      "name": "don-gramo",
-      "source": "./plugins/don-gramo",
+      "name": "dongramo",
+      "source": "./plugins/dongramo",
       "description": "Entrenador y asistente de dieta del hogar: menús escalados a cada persona, reajustes, receta del día, compra, peso y revisión semanal. Thermomix y bot de Telegram opcionales.",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     {
-      "name": "don-gramo-cookidoo",
-      "source": "./plugins/don-gramo-cookidoo",
-      "description": "Extensión opcional y no oficial: conecta Don Gramo con tu cuenta de Cookidoo. Requiere don-gramo.",
-      "version": "1.0.0"
+      "name": "dongramo-cookidoo",
+      "source": "./plugins/dongramo-cookidoo",
+      "description": "Extensión opcional y no oficial: conecta Don Gramo con tu cuenta de Cookidoo. Requiere dongramo.",
+      "version": "1.1.0"
     }
   ]
 }

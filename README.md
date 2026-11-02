@@ -2,7 +2,7 @@
 
 # Don Gramo
 
-[![CI](https://github.com/rayotropic/don-gramo/actions/workflows/ci.yml/badge.svg)](https://github.com/rayotropic/don-gramo/actions/workflows/ci.yml)
+[![CI](https://github.com/rayotropic/dongramo/actions/workflows/ci.yml/badge.svg)](https://github.com/rayotropic/dongramo/actions/workflows/ci.yml)
 
 **Entrenador y asistente de dieta para Claude**, para una persona, una pareja o una familia entera.
 Todos comen los mismos platos y cada uno recibe *sus* gramos, ajustados a sus calorías.
@@ -37,57 +37,57 @@ las cantidades son idénticas uses el modelo que uses.
 
 | Herramienta | Modelo | Cómo se instala | Bot de Telegram |
 |---|---|---|---|
-| **Claude Code** (terminal o pestaña Code de la app de Claude) | Claude | Plugin | Incluido: `/don-gramo:telegram` |
+| **Claude Code** (terminal o pestaña Code de la app de Claude) | Claude | Plugin | Incluido: `/dongramo:telegram` |
 | **Codex** (incluido en los planes de ChatGPT) | GPT | `./instalar.sh codex` | — |
 | **OpenClaw** | el que configures | `./instalar.sh openclaw` | Con los canales de OpenClaw |
 | Otras compatibles con AgentSkills | — | `./instalar.sh agents` | — |
 
 Necesitas `python3` (3.9 o superior; viene con macOS y casi todos los Linux).
-Si usas varias en la misma máquina, comparten los datos (`~/.don-gramo`).
+Si usas varias en la misma máquina, comparten los datos (`~/.dongramo`).
 
 ## Instalación
 
 ### Claude Code
 
 ```
-/plugin marketplace add rayotropic/don-gramo
-/plugin install don-gramo@don-gramo
+/plugin marketplace add rayotropic/dongramo
+/plugin install dongramo@dongramo
 ```
 
 Después:
 
 ```
-/don-gramo:configurar somos mi pareja, yo y nuestro hijo de 12 años
+/dongramo:configurar somos mi pareja, yo y nuestro hijo de 12 años
 ```
 
 Don Gramo te pregunta lo necesario (edad, altura, peso, actividad y objetivo de cada uno), estima
 las calorías de partida y ya está. A partir de ahí, habla con él normalmente:
 
-- «¿Qué ceno hoy?» · `/don-gramo:hoy`
+- «¿Qué ceno hoy?» · `/dongramo:hoy`
 - «Hoy he comido fuera: menú del día con paella y flan»
 - «Nos hemos tomado dos cañas y una de bravas»
 - «Peso 81,4» (o pega la captura de tu báscula)
 - «¿Cómo voy?» · «Cambia el bacalao del miércoles por merluza»
-- `/don-gramo:compra próxima`
+- `/dongramo:compra próxima`
 
 ### Codex y OpenClaw
 
 ```
-git clone https://github.com/rayotropic/don-gramo && cd don-gramo
+git clone https://github.com/rayotropic/dongramo && cd dongramo
 ./instalar.sh codex          # o: ./instalar.sh openclaw   (añade --cookidoo si quieres la extensión)
 ```
 
 - **Codex** solo deja escribir dentro del proyecto en el que trabajas. Para que Don Gramo guarde tus
-  datos, arráncalo con `codex --add-dir ~/.don-gramo` o añade a `~/.codex/config.toml`:
+  datos, arráncalo con `codex --add-dir ~/.dongramo` o añade a `~/.codex/config.toml`:
   ```toml
   [sandbox_workspace_write]
-  writable_roots = ["/Users/TU_USUARIO/.don-gramo"]
+  writable_roots = ["/Users/TU_USUARIO/.dongramo"]
   ```
   (el instalador te muestra la línea exacta con tu ruta).
 - **OpenClaw**: por defecto la instala para todos tus agentes; con `--agent <id>`, solo en uno
   (recomendado: un agente propio para Don Gramo). No necesitas el bot de Telegram de este
   repositorio: OpenClaw ya tiene sus canales (Telegram, WhatsApp...). Si te pide aprobar cada
-  comando, permite `python3 …/don-gramo/scripts/dieta.py`.
+  comando, permite `python3 …/dongramo/scripts/dieta.py`.
 - Sin comandos con barra: pídeselo con naturalidad («configura Don Gramo para mi familia», «¿qué
   ceno hoy?»).
 - Para actualizar: `git pull` y repite `./instalar.sh ...`. Tus datos no se tocan.
@@ -95,12 +95,27 @@ git clone https://github.com/rayotropic/don-gramo && cd don-gramo
 ### Actualizaciones
 
 - **Claude Code**: por defecto los plugins de catálogos de terceros **no se actualizan solos**. Para
-  recibir las versiones nuevas automáticamente: `/plugin` → pestaña **Marketplaces** → `don-gramo` →
-  **Enable auto-update**. Para actualizar a mano: `claude plugin update don-gramo@don-gramo`.
+  recibir las versiones nuevas automáticamente: `/plugin` → pestaña **Marketplaces** → `dongramo` →
+  **Enable auto-update**. Para actualizar a mano: `claude plugin update dongramo@dongramo`.
 - **Codex y OpenClaw**: `git pull` y repite `./instalar.sh ...`.
-- **Bot de Telegram**: tras actualizar, `/don-gramo:telegram` pasa la versión nueva al bot.
+- **Bot de Telegram**: tras actualizar, `/dongramo:telegram` pasa la versión nueva al bot.
 
 Qué cambia en cada versión: [CHANGELOG](CHANGELOG.md) y [Releases](../../releases).
+
+### Si vienes de la 1.0 (`don-gramo`, con guion)
+
+Desde la 1.1 el proyecto se llama `dongramo`. Tus datos se pasan solos de `~/.don-gramo` a
+`~/.dongramo` la primera vez que lo uses. En Claude Code, cambia de marketplace:
+
+```
+/plugin uninstall don-gramo@don-gramo
+/plugin marketplace remove don-gramo
+/plugin marketplace add rayotropic/dongramo
+/plugin install dongramo@dongramo
+```
+
+Si tienes el bot de Telegram, vuelve a lanzar `/dongramo:telegram` (o `bot/install.sh activar`)
+para que use la versión nueva.
 
 ### ¿Y en claude.ai?
 
@@ -111,11 +126,11 @@ encendido (un Mac, una Raspberry Pi o un servidor pequeño).
 
 ## Tus datos
 
-Todo se guarda en `~/.don-gramo/` (o en la carpeta de `DON_GRAMO_HOME`), fuera del plugin, así que
+Todo se guarda en `~/.dongramo/` (o en la carpeta de `DONGRAMO_HOME`), fuera del plugin, así que
 actualizarlo no borra nada:
 
 ```
-~/.don-gramo/
+~/.dongramo/
   config.json          hogar, personas y objetivos
   state/               registro de comidas, pesos, cambios de menú, preferencias, secretos (chmod 600)
   logs/
@@ -134,7 +149,7 @@ domingos, el progreso y la revisión.
 Desde Claude Code:
 
 ```
-/don-gramo:telegram
+/dongramo:telegram
 ```
 
 y un asistente te guía. Tú solo tienes que:
@@ -148,41 +163,41 @@ Lo demás (guardar el código, detectar el grupo, arrancar el bot y los avisos c
 systemd en Linux, y el mensaje de prueba) lo hace el asistente. Necesitas un ordenador que esté
 encendido (un Mac, una Raspberry Pi o un servidor pequeño) con Claude Code y la sesión iniciada.
 
-Después de actualizar el plugin, vuelve a ejecutar `/don-gramo:telegram` para pasar la versión nueva
-al bot. Las horas de los avisos están en `~/.don-gramo/config.json` (`telegram.aviso_diario`,
+Después de actualizar el plugin, vuelve a ejecutar `/dongramo:telegram` para pasar la versión nueva
+al bot. Las horas de los avisos están en `~/.dongramo/config.json` (`telegram.aviso_diario`,
 `telegram.aviso_semanal`).
 
 <details>
 <summary>Instalación manual (sin el asistente)</summary>
 
-`plugins/don-gramo/bot/install.sh token` · `install.sh ids` · `install.sh chat -100XXXXXXXXXX` ·
+`plugins/dongramo/bot/install.sh token` · `install.sh ids` · `install.sh chat -100XXXXXXXXXX` ·
 `install.sh activar` · `install.sh estado` · `install.sh parar` · `install.sh probar`.
 </details>
 
 ## Cookidoo (extensión opcional, no oficial)
 
-Si tienes Thermomix, la extensión `don-gramo-cookidoo` sube la receta del día a tu cuenta de
+Si tienes Thermomix, la extensión `dongramo-cookidoo` sube la receta del día a tu cuenta de
 Cookidoo (privada, en *Creadas por mí*) con las cantidades de todos sumadas y los pasos programados,
 la añade a *Mi semana* y busca recetas del recetario oficial que cuadren con tu plan. Va en un plugin
 aparte para que Don Gramo no dependa de ella:
 
 ```
-/plugin install don-gramo-cookidoo@don-gramo
+/plugin install dongramo-cookidoo@dongramo
 ```
 
 Usa la librería comunitaria [`cookidoo-api`](https://pypi.org/project/cookidoo-api/), que **no es de
 Vorwerk ni está respaldada por Vorwerk**: puede dejar de funcionar y es posible que las condiciones de
 uso de Cookidoo no lo permitan. Instálala solo si lo aceptas. Cada persona usa su propia cuenta y las
 credenciales se quedan en su máquina. Instrucciones:
-[`plugins/don-gramo-cookidoo/skills/don-gramo-cookidoo/SKILL.md`](plugins/don-gramo-cookidoo/skills/don-gramo-cookidoo/SKILL.md).
+[`plugins/dongramo-cookidoo/skills/dongramo-cookidoo/SKILL.md`](plugins/dongramo-cookidoo/skills/dongramo-cookidoo/SKILL.md).
 
 ## Cómo funciona por dentro
 
 ```
 .claude-plugin/marketplace.json     catálogo de Claude Code: los dos plugins de este repositorio
 instalar.sh                         instalador para Codex, OpenClaw y ~/.agents/skills
-plugins/don-gramo/                  EL PLUGIN (todo lo necesario)
-  skills/don-gramo/
+plugins/dongramo/                  EL PLUGIN (todo lo necesario)
+  skills/dongramo/
     SKILL.md                        instrucciones para Claude
     data/menu.json                  3 menús × 7 días, 68 alimentos, 29 recetas (Thermomix y tradicional)
     references/                     reglas del reajuste, estimaciones de comida fuera, configuración
@@ -191,15 +206,15 @@ plugins/don-gramo/                  EL PLUGIN (todo lo necesario)
     scripts/coach.py                pesos, tendencia, revisión semanal de calorías
     scripts/perfiles.py             alta de personas y estimación inicial (Mifflin-St Jeor)
     scripts/telegram_bridge.py · aviso.py · telegram_setup.py (asistente)
-  commands/                         /don-gramo:configurar · hoy · compra · telegram
+  commands/                         /dongramo:configurar · hoy · compra · telegram
   bot/                              instalador y plantillas launchd/systemd
-plugins/don-gramo-cookidoo/         extensión opcional (solo Cookidoo)
+plugins/dongramo-cookidoo/         extensión opcional (solo Cookidoo)
 tests/                              pruebas (python3 -m unittest discover -s tests)
 tools/                              check_release.py (comprobaciones) · version.py (subir versión)
 .github/                            CI, publicación de versiones y plantillas de issues/PR
 ```
 
-Las reglas exactas están en [`reglas-ajuste.md`](plugins/don-gramo/skills/don-gramo/references/reglas-ajuste.md).
+Las reglas exactas están en [`reglas-ajuste.md`](plugins/dongramo/skills/dongramo/references/reglas-ajuste.md).
 
 ## Contribuir
 

@@ -9,7 +9,7 @@
 ## Antes de nada: privacidad
 
 Don Gramo maneja datos de salud. **Nunca** pegues en un issue o PR tus pesos, tu registro de comidas,
-tu `~/.don-gramo/config.json`, capturas de la báscula con tu nombre, tokens de Telegram ni
+tu `~/.dongramo/config.json`, capturas de la báscula con tu nombre, tokens de Telegram ni
 credenciales de Cookidoo. Si hace falta un ejemplo, invéntate los datos. La CI rechaza ficheros de
 datos y patrones de tokens o emails personales.
 
@@ -18,13 +18,13 @@ datos y patrones de tokens o emails personales.
 Solo necesitas `python3` (3.9 o superior) y git. El motor no tiene dependencias.
 
 ```
-git clone https://github.com/rayotropic/don-gramo && cd don-gramo
+git clone https://github.com/rayotropic/dongramo && cd dongramo
 python3 -m unittest discover -s tests       # todas las pruebas, ~10 s
 python3 tools/check_release.py               # versiones, cabeceras y privacidad
 ```
 
-Para probar en Claude Code sin instalar nada: `claude --plugin-dir ./plugins/don-gramo`, con
-`DON_GRAMO_HOME=/tmp/prueba` para no mezclar con tus datos reales.
+Para probar en Claude Code sin instalar nada: `claude --plugin-dir ./plugins/dongramo`, con
+`DONGRAMO_HOME=/tmp/prueba` para no mezclar con tus datos reales.
 
 ## Reglas del proyecto
 
@@ -48,7 +48,7 @@ Claude Code solo actualiza a quien tiene el plugin si cambia el campo `version`.
 que toque un plugin sube su versión** (la CI lo comprueba):
 
 ```
-python3 tools/version.py don-gramo 1.1.0 "Qué cambia, en una línea"
+python3 tools/version.py dongramo 1.1.0 "Qué cambia, en una línea"
 ```
 
 Usa [versionado semántico](https://semver.org/lang/es/): arreglo → 1.0.**1**; función nueva

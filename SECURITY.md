@@ -9,7 +9,7 @@ Responderé lo antes posible.
 
 ## Qué datos maneja Don Gramo
 
-- Todo se guarda en tu máquina, en `~/.don-gramo/` (o `$DON_GRAMO_HOME`). El proyecto no tiene
+- Todo se guarda en tu máquina, en `~/.dongramo/` (o `$DONGRAMO_HOME`). El proyecto no tiene
   servidores ni recoge datos.
 - Los secretos (token de Telegram, credenciales de Cookidoo) van al Llavero de macOS o a
   `state/secrets.env` con permisos 600.

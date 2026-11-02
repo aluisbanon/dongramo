@@ -1,5 +1,19 @@
 # Cambios
 
+## 1.1.0 · 2026-11-02
+
+El proyecto pasa a llamarse **dongramo**, sin guion (como dongramo.com y dongramo.es). Si vienes
+de la 1.0 no pierdes nada:
+
+- Plugins `dongramo` y `dongramo-cookidoo`; comandos `/dongramo:hoy`, `/dongramo:compra`…
+  Reinstala desde el marketplace nuevo (ver «Si vienes de la 1.0» en el README).
+- Datos en `~/.dongramo`. La primera vez se renombra solo `~/.don-gramo` y queda un enlace con el
+  nombre antiguo, para que un bot instalado con la 1.0 siga funcionando hasta que lo reactives.
+- `DONGRAMO_HOME` y `DONGRAMO_NUCLEO`; las variables antiguas (`DON_GRAMO_…`) se siguen entendiendo.
+- Secretos `dongramo-telegram-bot/chat`; si solo están con el nombre antiguo, se usan esos.
+- En Linux, `bot/install.sh activar` quita las unidades `don-gramo-*` y crea las `dongramo-*`.
+- `instalar.sh` quita la copia antigua de la skill en Codex y `~/.agents/skills`.
+
 ## 1.0.0 · 2026-10-26
 
 Primera versión pública, a partir del bot privado de una pareja.

@@ -2,7 +2,7 @@
 
     python3 -m unittest discover -s tests -v
 
-Cada prueba usa un DON_GRAMO_HOME temporal y lanza dieta.py como lo haría Claude.
+Cada prueba usa un DONGRAMO_HOME temporal y lanza dieta.py como lo haría Claude.
 """
 from __future__ import annotations
 
@@ -15,9 +15,15 @@ import tempfile
 import unittest
 from pathlib import Path
 
+# Las pruebas nunca deben tocar los datos reales (~/.dongramo, ~/.don-gramo): carpeta temporal para todo
+# lo que importe common.py en este mismo proceso. Va antes de cualquier import del motor.
+_DATOS_PRUEBA = tempfile.mkdtemp(prefix="dongramo-pruebas-")
+os.environ["DONGRAMO_HOME"] = _DATOS_PRUEBA
+os.environ.pop("DON_GRAMO_HOME", None)
+
 RAIZ = Path(__file__).resolve().parent.parent
-SKILL = RAIZ / "plugins" / "don-gramo" / "skills" / "don-gramo"
-COOKIDOO = RAIZ / "plugins" / "don-gramo-cookidoo" / "skills" / "don-gramo-cookidoo"
+SKILL = RAIZ / "plugins" / "dongramo" / "skills" / "dongramo"
+COOKIDOO = RAIZ / "plugins" / "dongramo-cookidoo" / "skills" / "dongramo-cookidoo"
 LUNES = "2026-10-26"
 
 
@@ -27,7 +33,7 @@ class Hogar:
         self.home = Path(self.dir.name)
 
     def run(self, *args, ok=True, script="dieta.py", cwd=SKILL) -> str:
-        env = dict(os.environ, DON_GRAMO_HOME=str(self.home))
+        env = dict(os.environ, DONGRAMO_HOME=str(self.home))
         p = subprocess.run([sys.executable, "-I", f"scripts/{script}", *args], cwd=cwd, env=env,
                            capture_output=True, text=True, timeout=60)
         if ok and p.returncode != 0:
@@ -232,12 +238,12 @@ class AsistenteTelegram(unittest.TestCase):
     def test_copia_estable_funciona_sola(self):
         self.h.config(pareja())
         self.assertIn("Copia estable instalada", self.tg("copiar"))
-        copia = self.h.home / "app" / "don-gramo" / "skills" / "don-gramo"
-        env = dict(os.environ, DON_GRAMO_HOME=str(self.h.home))
+        copia = self.h.home / "app" / "dongramo" / "skills" / "dongramo"
+        env = dict(os.environ, DONGRAMO_HOME=str(self.h.home))
         p = subprocess.run([sys.executable, "-I", "scripts/dieta.py", "personas"], cwd=copia, env=env,
                            capture_output=True, text=True)
         self.assertIn("Ana", p.stdout)
-        self.assertFalse((self.h.home / "app" / "don-gramo-cookidoo").exists())  # no instalada: no se copia
+        self.assertFalse((self.h.home / "app" / "dongramo-cookidoo").exists())  # no instalada: no se copia
         self.assertIn("actualizada", self.tg("copiar"))
 
     def test_token_nunca_por_argumento_ni_sin_terminal(self):
@@ -253,7 +259,7 @@ class AsistenteTelegram(unittest.TestCase):
 
 
 class SkillsSueltas(unittest.TestCase):
-    """Como las instala OpenClaw: <dir>/don-gramo y <dir>/don-gramo-cookidoo, una junto a otra, sin plugin."""
+    """Como las instala OpenClaw: <dir>/dongramo y <dir>/dongramo-cookidoo, una junto a otra, sin plugin."""
 
     def test_nucleo_y_extension_se_encuentran(self):
         import shutil
@@ -261,21 +267,21 @@ class SkillsSueltas(unittest.TestCase):
         try:
             h.config(pareja())
             dirs = h.home / "skills"
-            shutil.copytree(SKILL, dirs / "don-gramo")
-            shutil.copytree(COOKIDOO, dirs / "don-gramo-cookidoo")
-            env = dict(os.environ, DON_GRAMO_HOME=str(h.home))
+            shutil.copytree(SKILL, dirs / "dongramo")
+            shutil.copytree(COOKIDOO, dirs / "dongramo-cookidoo")
+            env = dict(os.environ, DONGRAMO_HOME=str(h.home))
             run = lambda *a: subprocess.run([sys.executable, "-I", *a], env=env, capture_output=True, text=True).stdout  # noqa: E731
-            self.assertIn("Ana", run(str(dirs / "don-gramo" / "scripts" / "dieta.py"), "personas"))
+            self.assertIn("Ana", run(str(dirs / "dongramo" / "scripts" / "dieta.py"), "personas"))
             (h.home / "plugins.json").unlink(missing_ok=True)  # que no tire de lo registrado
-            out = run(str(dirs / "don-gramo-cookidoo" / "scripts" / "cookidoo.py"), "receta", "--fecha", LUNES, "--comida", "Comida")
+            out = run(str(dirs / "dongramo-cookidoo" / "scripts" / "cookidoo.py"), "receta", "--fecha", LUNES, "--comida", "Comida")
             self.assertIn("Para Cookidoo", out)
-            self.assertIn("solo tiene la skill", run(str(dirs / "don-gramo" / "scripts" / "telegram_setup.py"), "copiar"))
+            self.assertIn("solo tiene la skill", run(str(dirs / "dongramo" / "scripts" / "telegram_setup.py"), "copiar"))
         finally:
             h.close()
 
     def test_cabecera_compatible(self):
         cab = (SKILL / "SKILL.md").read_text().split("---")[1]
-        self.assertIn("name: don-gramo", cab)
+        self.assertIn("name: dongramo", cab)
         self.assertIn('"openclaw"', cab)
         self.assertNotIn("python3 scripts/", (SKILL / "SKILL.md").read_text())
 
@@ -289,8 +295,8 @@ class Instalador(unittest.TestCase):
                                    capture_output=True, text=True)
                 self.assertEqual(p.returncode, 0, p.stderr)
             for sk in (Path(d) / ".codex" / "skills", Path(d) / ".agents" / "skills"):
-                self.assertTrue((sk / "don-gramo" / "SKILL.md").exists())
-                self.assertTrue((sk / "don-gramo-cookidoo" / "scripts" / "cookidoo.py").exists())
+                self.assertTrue((sk / "dongramo" / "SKILL.md").exists())
+                self.assertTrue((sk / "dongramo-cookidoo" / "scripts" / "cookidoo.py").exists())
                 self.assertFalse(list(sk.rglob("__pycache__")))
 
     def test_cabecera_valida_para_codex(self):
@@ -327,7 +333,7 @@ class ExtensionCookidoo(unittest.TestCase):
     def test_se_registra_y_el_nucleo_la_ve(self):
         self.ck("receta", "--fecha", LUNES, "--comida", "Comida")
         reg = json.loads((self.h.home / "plugins.json").read_text())
-        self.assertIn("don-gramo-cookidoo", reg)
+        self.assertIn("dongramo-cookidoo", reg)
         self.assertNotIn("conectado", self.h.run("hogar"))  # sin ./install.sh instalar, no se anuncia
         (self.h.home / ".venv-cookidoo" / "bin").mkdir(parents=True)
         (self.h.home / ".venv-cookidoo" / "bin" / "python").touch()
@@ -335,15 +341,15 @@ class ExtensionCookidoo(unittest.TestCase):
         self.assertIn("Cookidoo: conectado", self.h.run("hogar"))
 
     def test_sin_nucleo_avisa(self):
-        env = dict(os.environ, DON_GRAMO_HOME=str(self.h.home), DON_GRAMO_NUCLEO="/no/existe")
+        env = dict(os.environ, DONGRAMO_HOME=str(self.h.home), DONGRAMO_NUCLEO="/no/existe")
         with tempfile.TemporaryDirectory() as d:  # copia aislada de la extensión, sin el núcleo al lado
             import shutil
-            dst = Path(d) / "plugins" / "don-gramo-cookidoo"
+            dst = Path(d) / "plugins" / "dongramo-cookidoo"
             shutil.copytree(COOKIDOO.parent.parent, dst)
             (self.h.home / "plugins.json").write_text("{}")
             p = subprocess.run([sys.executable, "-I", "scripts/cookidoo.py", "probar"],
-                               cwd=dst / "skills" / "don-gramo-cookidoo", env=env, capture_output=True, text=True)
-        self.assertIn("necesita el plugin don-gramo", p.stdout)
+                               cwd=dst / "skills" / "dongramo-cookidoo", env=env, capture_output=True, text=True)
+        self.assertIn("necesita el plugin dongramo", p.stdout)
 
 class EnvioTelegram(unittest.TestCase):
     """tg_send sin red: Telegram devuelve el Markdown inválido como HTTP 400."""

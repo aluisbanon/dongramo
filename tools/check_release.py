@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-PLUGINS = ("don-gramo", "don-gramo-cookidoo")
+PLUGINS = ("dongramo", "dongramo-cookidoo")
 CLAVES_SKILL = {"name", "description", "license", "allowed-tools", "metadata"}  # las que admite Codex
 # Ficheros que nunca deben estar en el repositorio (datos de salud, secretos, entornos)
 PROHIBIDOS = re.compile(r"(^|/)(state/|logs/|config\.json$|secrets\.env$|.*\.jsonl$|\.venv)")
@@ -53,7 +53,7 @@ def versiones() -> dict:
         out[nombre] = v
     cambios = (RAIZ / "CHANGELOG.md").read_text(encoding="utf-8")
     m = re.search(r"^## (\d+\.\d+\.\d+)", cambios, re.M)
-    principal = out.get("don-gramo")
+    principal = out.get("dongramo")
     if not m or m.group(1) != principal:
         errores.append(f"CHANGELOG.md: la primera entrada debería ser «## {principal}» (es {m.group(1) if m else 'ninguna'}).")
     return out
@@ -123,8 +123,8 @@ def main() -> int:
     privacidad()
     if a.base:
         subio_version(a.base, v)
-    if a.tag and a.tag.lstrip("v") != v.get("don-gramo"):
-        errores.append(f"La etiqueta {a.tag} no coincide con la versión de don-gramo ({v.get('don-gramo')}).")
+    if a.tag and a.tag.lstrip("v") != v.get("dongramo"):
+        errores.append(f"La etiqueta {a.tag} no coincide con la versión de dongramo ({v.get('dongramo')}).")
     if errores:
         print("❌ Hay que arreglar esto antes de publicar:\n" + "\n".join(f"  - {e}" for e in errores))
         return 1

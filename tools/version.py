@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Sube la versión de un plugin en todos los sitios a la vez.
 
-    python3 tools/version.py don-gramo 1.1.0 "Nuevo menú D y mejoras en la compra"
-    python3 tools/version.py don-gramo-cookidoo 1.0.1 "Arreglo en la búsqueda"
+    python3 tools/version.py dongramo 1.1.0 "Nuevo menú D y mejoras en la compra"
+    python3 tools/version.py dongramo-cookidoo 1.0.1 "Arreglo en la búsqueda"
 
-Cambia plugin.json y su entrada en marketplace.json. Para don-gramo (el que marca las publicaciones)
+Cambia plugin.json y su entrada en marketplace.json. Para dongramo (el que marca las publicaciones)
 añade además la entrada al principio del CHANGELOG. Después: revisa, haz commit y, para publicar,
 `git tag v<versión> && git push --tags`. Solo stdlib.
 """
@@ -46,14 +46,14 @@ def main() -> int:
         if e["name"] == plugin:
             e["version"] = nueva
     guardar(cat_p, cat)
-    if plugin == "don-gramo":
+    if plugin == "dongramo":
         ch = RAIZ / "CHANGELOG.md"
         texto = ch.read_text(encoding="utf-8")
         entrada = f"## {nueva} · {dt.date.today().isoformat()}\n\n- {nota or 'Describe aquí los cambios.'}\n\n"
         i = texto.find("\n## ")
         texto = texto[:i + 1] + entrada + texto[i + 1:] if i >= 0 else texto + "\n" + entrada
         ch.write_text(texto, encoding="utf-8")
-    print(f"✅ {plugin}: {antes} → {nueva}" + (" (CHANGELOG actualizado)" if plugin == "don-gramo" else ""))
+    print(f"✅ {plugin}: {antes} → {nueva}" + (" (CHANGELOG actualizado)" if plugin == "dongramo" else ""))
     return 0
 
 

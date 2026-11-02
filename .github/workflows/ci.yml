@@ -51,8 +51,8 @@ jobs:
           fi
       - name: Scripts de shell
         run: |
-          for f in instalar.sh plugins/don-gramo/bot/install.sh plugins/don-gramo-cookidoo/install.sh; do bash -n "$f"; done
-          shellcheck -S error instalar.sh plugins/don-gramo/bot/install.sh plugins/don-gramo-cookidoo/install.sh
+          for f in instalar.sh plugins/dongramo/bot/install.sh plugins/dongramo-cookidoo/install.sh; do bash -n "$f"; done
+          shellcheck -S error instalar.sh plugins/dongramo/bot/install.sh plugins/dongramo-cookidoo/install.sh
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
@@ -60,5 +60,5 @@ jobs:
         run: |
           npm install -g @anthropic-ai/claude-code@2.1.311
           claude plugin validate .
-          claude plugin validate plugins/don-gramo
-          claude plugin validate plugins/don-gramo-cookidoo
+          claude plugin validate plugins/dongramo
+          claude plugin validate plugins/dongramo-cookidoo
