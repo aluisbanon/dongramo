@@ -1,5 +1,20 @@
 # Cambios
 
+## 1.1.1 · 2026-11-15
+
+Versión de seguridad. Conviene actualizar, sobre todo si usas el bot de Telegram.
+
+- El bot ya no puede ejecutar `date` (en Linux, `date -f` podía leer archivos de `~/.dongramo`).
+- Dar de alta o de baja a personas y vincular cuentas de Telegram solo se puede hacer desde el
+  ordenador, no pidiéndoselo al bot.
+- Al configurar Telegram, si hay más de un chat, Don Gramo pregunta cuál es en vez de elegir un
+  grupo por su cuenta.
+- Los secretos se guardan con permisos 600 desde el primer momento y van al Llavero sin aparecer
+  en la lista de procesos. `~/.dongramo` pasa a ser privada (0700).
+- Cookidoo: el instalador ya no descarga y ejecuta el instalador de `uv`. Instálalo antes
+  (`brew install uv` en macOS).
+- GitHub Actions fijadas por su huella (SHA).
+
 ## 1.1.0 · 2026-11-02
 
 El proyecto pasa a llamarse **dongramo**, sin guion (como dongramo.com y dongramo.es). Si vienes

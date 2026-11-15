@@ -10,13 +10,13 @@
       "name": "dongramo",
       "source": "./plugins/dongramo",
       "description": "Entrenador y asistente de dieta del hogar: menús escalados a cada persona, reajustes, receta del día, compra, peso y revisión semanal. Thermomix y bot de Telegram opcionales.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "dongramo-cookidoo",
       "source": "./plugins/dongramo-cookidoo",
       "description": "Extensión opcional y no oficial: conecta Don Gramo con tu cuenta de Cookidoo. Requiere dongramo.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     }
   ]
 }

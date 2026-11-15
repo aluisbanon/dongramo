@@ -41,9 +41,11 @@ case "${1:-}" in
   instalar)
     UV="$(command -v uv || echo "$HOME/.local/bin/uv")"
     if [ ! -x "$UV" ]; then
-      echo "Instalando uv (gestor de Python, en ~/.local/bin)..."
-      curl -LsSf https://astral.sh/uv/install.sh | sh
-      UV="$HOME/.local/bin/uv"
+      # No se descarga y ejecuta nada sin revisar (antes: curl ... | sh). uv se instala aparte.
+      echo "Falta uv (gestor de Python). Instálalo y repite este paso:"
+      echo "  macOS:  brew install uv"
+      echo "  Linux:  el paquete uv de tu distribución, o https://docs.astral.sh/uv/getting-started/installation/"
+      exit 1
     fi
     "$UV" venv --python 3.12 "$DGHOME/.venv-cookidoo"
     "$UV" pip install --python "$DGHOME/.venv-cookidoo/bin/python" "cookidoo-api==0.19.0"

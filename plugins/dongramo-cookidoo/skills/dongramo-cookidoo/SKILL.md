@@ -46,7 +46,7 @@ F y T como en la skill `dongramo` (hoy, mañana, jueves...; Comida, Cena...).
 Desde la carpeta del plugin `dongramo-cookidoo`:
 
 ```
-./install.sh instalar     # Python 3.12 aparte en ~/.dongramo/.venv-cookidoo (con uv)
+./install.sh instalar     # Python 3.12 aparte en ~/.dongramo/.venv-cookidoo (necesita uv: brew install uv)
 ./install.sh cuenta       # email y contraseña de Cookidoo (Keychain o ~/.dongramo/state/secrets.env)
 ./install.sh probar
 ```

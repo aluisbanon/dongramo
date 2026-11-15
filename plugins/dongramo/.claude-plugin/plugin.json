@@ -1,6 +1,6 @@
 {
   "name": "dongramo",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Entrenador y asistente de dieta para una persona, una pareja o una familia: menús semanales que se escalan a las calorías de cada uno, reajuste tras comer fuera, receta del día con los gramos de cada uno, lista de la compra, seguimiento de peso y revisión semanal. Thermomix, Cookidoo y bot de Telegram opcionales.",
   "author": {
     "name": "aluisbanon",
