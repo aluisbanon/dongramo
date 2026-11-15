@@ -51,10 +51,15 @@ rellenar() {  # plantilla -> destino, con rutas y hora
 # Guarda un secreto en state/secrets.env (chmod 600), que funciona sin sesión gráfica y en Linux,
 # y además en el Keychain de macOS si se puede.
 guardar() {
-  touch "$SECRETS"; chmod 600 "$SECRETS"
-  grep -v "^$1=" "$SECRETS" > "$SECRETS.tmp" || true
-  echo "$1=$2" >> "$SECRETS.tmp"; mv "$SECRETS.tmp" "$SECRETS"; chmod 600 "$SECRETS"
-  if [ "$(uname)" = Darwin ] && security add-generic-password -U -a "$USER" -s "$1" -w "$2" 2>/dev/null; then
+  # umask 077: el temporal nace ya con permisos 600 (antes podía quedar legible por otros usuarios).
+  ( umask 077
+    touch "$SECRETS"; chmod 600 "$SECRETS"
+    grep -v "^$1=" "$SECRETS" > "$SECRETS.tmp" || true
+    printf '%s=%s\n' "$1" "$2" >> "$SECRETS.tmp"; mv "$SECRETS.tmp" "$SECRETS"; chmod 600 "$SECRETS" )
+  # Llavero con `security -i` por stdin: el secreto no aparece en la lista de procesos.
+  if [ "$(uname)" = Darwin ] && [[ "$2" != *[\"\\]* ]] \
+     && printf 'add-generic-password -U -a "%s" -s "%s" -w "%s"\n' "$USER" "$1" "$2" | security -i >/dev/null 2>&1 \
+     && [ "$(security find-generic-password -a "$USER" -s "$1" -w 2>/dev/null)" = "$2" ]; then
     echo "Guardado $1 en $SECRETS y en el Keychain."
   else
     echo "Guardado $1 en $SECRETS."

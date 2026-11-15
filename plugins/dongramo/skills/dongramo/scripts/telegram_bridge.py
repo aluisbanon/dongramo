@@ -17,6 +17,7 @@ Dos capas:
 from __future__ import annotations
 
 import json
+import os
 import re
 import subprocess
 import sys
@@ -277,8 +278,9 @@ def capa_modelo(cfg: dict, mensaje: str, persona: str, foto: Path | None) -> str
                      f"anota el peso con `dieta.py peso`).\n" if foto else ""}
     # Lectura solo de la skill y de las fotos recibidas: nunca de state/ (secretos, datos de salud).
     # En las reglas de permisos de Claude Code, «//ruta» es una ruta absoluta.
+    # Sin `date`: la fecha y la hora ya van en el prompt, y `date -f FICHERO` (GNU) leería archivos.
     allowed = (f"Read(/{SKILL}/**),Read(/{INBOX}/**),Bash(python3 {SKILL}/scripts/dieta.py:*),"
-               "Bash(python3 scripts/dieta.py:*),Bash(date:*)")
+               "Bash(python3 scripts/dieta.py:*)")
     # Denegar todo state/ bloquearía también state/inbox: se deniegan los ficheros sensibles uno a uno
     # (el resto de state/ ya queda fuera porque no está permitido ni es directorio de trabajo).
     # Además, en construir(): solo Read y Bash, sin heredar los ajustes del usuario (sus reglas «allow»
@@ -302,15 +304,19 @@ def capa_modelo(cfg: dict, mensaje: str, persona: str, foto: Path | None) -> str
             c += ["--model", cfg["agent"]["claude_model"]]
         return c
 
+    # dieta.py rechaza las altas, bajas y vinculaciones de Telegram cuando las pide el modelo del bot.
+    entorno = {**os.environ, "DONGRAMO_DESDE_BOT": "1"}
     sesion = sesion_vigente()
     try:
-        proc = subprocess.run(construir(sesion), capture_output=True, text=True, cwd=str(ROOT), timeout=600)
+        proc = subprocess.run(construir(sesion), capture_output=True, text=True, cwd=str(ROOT), timeout=600,
+                              env=entorno)
     except FileNotFoundError:
         return "No encuentro `claude` desde launchd. Pon la ruta de `which claude` en `agent.claude_bin` de config.json."
     if sesion and proc.returncode != 0:
         log("--resume falló, empiezo conversación nueva", level="WARN")
         olvidar_sesion()
-        proc = subprocess.run(construir(None), capture_output=True, text=True, cwd=str(ROOT), timeout=600)
+        proc = subprocess.run(construir(None), capture_output=True, text=True, cwd=str(ROOT), timeout=600,
+                              env=entorno)
     try:
         salida = json.loads(proc.stdout)
         guardar_sesion(salida.get("session_id"))

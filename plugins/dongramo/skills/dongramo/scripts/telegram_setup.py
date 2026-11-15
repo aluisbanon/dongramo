@@ -185,8 +185,8 @@ def chat(forzar: str | None = None) -> str:
             continue
         cid = m.get("migrate_to_chat_id") or c["id"]  # grupo convertido en supergrupo: id nuevo
         chats[cid] = {"tipo": c.get("type"), "nombre": c.get("title") or c.get("first_name") or ""}
-    grupos = {k: v for k, v in chats.items() if v["tipo"] in ("group", "supergroup")}
-    elegibles = grupos or chats
+    # Sin preferencias silenciosas (antes ganaban los grupos): si hay más de un chat, se pregunta cuál es.
+    elegibles = chats
     if not elegibles:
         return ("Todavía no veo ningún mensaje. Comprueba que el bot está en el grupo y escribid /ayuda "
                 "(o escríbele por privado). Luego dime «hecho» y lo vuelvo a mirar.")

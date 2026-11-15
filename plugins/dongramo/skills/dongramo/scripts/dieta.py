@@ -56,6 +56,7 @@ from __future__ import annotations
 import argparse
 import json
 import datetime as dt
+import os
 import sys
 from pathlib import Path
 
@@ -916,6 +917,8 @@ def cmd_preferencias(quitar=None):
 
 # --------------------------------------------------------------------------- CLI
 SIN_PERSONAS = {"hogar", "personas", "persona-alta", "receta", "catalogo", "alimentos", "alimento-nuevo", "menu"}
+# Cambian quién está en el plan o quién puede hablar con el bot: nunca desde el modelo del bot de Telegram.
+SOLO_LOCAL = {"persona-alta", "persona-baja", "vincular-telegram"}
 
 
 def main(argv=None):
@@ -985,6 +988,9 @@ def main(argv=None):
     s.add_argument("--kcal", type=float); s.add_argument("--suelo", type=float); s.add_argument("--entrenos"); s.add_argument("--modo", choices=["perder", "mantener"])
     a = ap.parse_args(argv)
     c = a.cmd
+    if c in SOLO_LOCAL and os.environ.get("DONGRAMO_DESDE_BOT"):
+        print("Eso solo se puede hacer desde el ordenador (Claude Code o la terminal), no desde el bot de Telegram.")
+        return 1
     registrar_plugin("dongramo", SCRIPTS)
     if not PERSONAS and c not in SIN_PERSONAS:
         print("Aún no hay nadie en el plan. Configúralo primero: `persona-alta --nombre ... --sexo ... --edad ... "

@@ -76,8 +76,17 @@ def load_config() -> dict:
         return json.loads(json.dumps(CONFIG_BASE))
 
 
+def privado() -> None:
+    """Crea la carpeta de datos solo para este usuario (perfiles, pesos, fotos, registros, secretos)."""
+    try:
+        HOME.mkdir(parents=True, exist_ok=True)
+        os.chmod(HOME, 0o700)
+    except OSError:
+        pass
+
+
 def save_config(cfg: dict) -> None:
-    HOME.mkdir(parents=True, exist_ok=True)
+    privado()
     tmp = CONFIG.with_suffix(".tmp")
     tmp.write_text(json.dumps(cfg, ensure_ascii=False, indent=1), encoding="utf-8")
     tmp.replace(CONFIG)
@@ -150,6 +159,7 @@ def log(msg: str, *, level: str = "INFO") -> None:
     stamp = ahora().isoformat(timespec="seconds")
     line = f"{stamp} [{level}] {msg}"
     print(line, flush=True)
+    privado()
     LOGS.mkdir(parents=True, exist_ok=True)
     with open(LOGS / f"{hoy().isoformat()}.log", "a", encoding="utf-8") as fh:
         fh.write(line + "\n")
@@ -264,6 +274,7 @@ def tg_download(token: str, file_id: str, dest: Path) -> Path | None:
         info = tg_api(token, "getFile", file_id=file_id)
         path = info["result"]["file_path"]
         url = f"https://api.telegram.org/file/bot{token}/{path}"
+        privado()
         dest.parent.mkdir(parents=True, exist_ok=True)
         with urllib.request.urlopen(url, timeout=60) as r, open(dest, "wb") as fh:
             fh.write(r.read())
